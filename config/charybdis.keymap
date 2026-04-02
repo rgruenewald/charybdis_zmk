@@ -139,7 +139,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_win_layer {
+        base_layer {
             bindings = <
 &kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                          &kp DE_SQT
 &kp TAB         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J        &kp L               &kp U             &kp Y             &kp DE_SEMICOLON                &kp DE_U_UMLAUT
@@ -152,7 +152,7 @@
             label = "BASE";
         };
 
-        win_raise_layer {
+        symnum_layer {
             bindings = <
 &trans                        &trans                &trans                      &trans                              &trans                                &trans            &trans               &trans                  &trans                          &trans                           &trans                         &trans
 &kp DE_SECTION                &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES        &kp DE_HASH                         &kp DE_DOLLAR                         &kp DE_PERCENT    &kp DE_CARET         &kp DE_AMPS             &kp DE_ASTERISK                 &kp DE_LEFT_PARENTHESIS          &kp DE_RIGHT_PARENTHESIS       &kp DE_QUESTION
@@ -165,7 +165,7 @@
             label = "SYMNUM";
         };
 
-        win_lower_layer {
+        navsys_layer {
             bindings = <
 &trans      &trans    &trans         &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
 &kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
@@ -178,43 +178,7 @@
             label = "NAVSYS";
         };
 
-        default_mac_layer {
-            label = "UNUSED3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
-            >;
-        };
-
-        mac_raise_layer {
-            label = "UNUSED4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
-            >;
-        };
-
-        mac_lower_layer {
-            label = "UNUSED5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
-            >;
-        };
-
-        default_game_layer {
+        pointer_layer {
             label = "POINTER";
             bindings = <
 &trans      &trans          &trans          &trans          &trans            &trans              &trans      &trans          &trans          &trans          &trans                        &trans
@@ -222,30 +186,6 @@
 &kp PRINTSCREEN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE &kp C_NEXT     &mkp MB1          &mkp MB2            &trans      &mkp MB3        &kp RIGHT_GUI   &kp RIGHT_ALT   &kp RIGHT_CONTROL             &kp RIGHT_SHIFT
                                                             &lt 9 TAB          &kp SPACE          &lt 9 LEFT_GUI  &lt 9 ENTER  &kp BACKSPACE
                                                                              &mkp RCLK          &mkp LCLK         &mo 9
-            >;
-        };
-
-        game_raise_layer {
-            label = "UNUSED7";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
-            >;
-        };
-
-        game_lower_layer {
-            label = "UNUSED8";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
             >;
         };
 
@@ -275,7 +215,7 @@
             label = "SNIPER";
         };
 
-        keeb_pref_layer {
+        fnbt_layer {
             label = "FNBT";
             bindings = <
 &ext_power EP_TOG  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
