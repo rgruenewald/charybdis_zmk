@@ -218,9 +218,8 @@
             label = "POINTER";
             bindings = <
 &trans      &trans          &trans          &trans          &trans            &trans              &trans      &trans          &trans          &trans          &trans                        &trans
-&trans      &trans          &trans          &trans          &trans            &trans              &trans      &trans          &trans          &trans          &trans                        &trans
-&trans      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_GUI      &trans              &trans      &kp RIGHT_GUI   &kp RIGHT_ALT   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT              &trans
-&trans      &kp C_PREVIOUS  &kp C_PLAY_PAUSE &kp C_NEXT     &mkp MB1          &mkp MB2            &trans      &mkp MB3        &trans          &trans          &trans                        &trans
+&kp ESCAPE  &kp TAB         &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LEFT_GUI        &trans      &trans          &trans          &trans          &trans                        &trans
+&kp PRINTSCREEN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE &kp C_NEXT     &mkp MB1          &mkp MB2            &trans      &mkp MB3        &kp RIGHT_GUI   &kp RIGHT_ALT   &kp RIGHT_CONTROL             &kp RIGHT_SHIFT
                                                             &lt 9 TAB          &kp SPACE          &lt 9 LEFT_GUI  &lt 9 ENTER  &kp BACKSPACE
                                                                              &mkp RCLK          &mkp LCLK         &mo 9
             >;
