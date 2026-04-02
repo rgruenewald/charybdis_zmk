@@ -156,8 +156,8 @@
             bindings = <
 &trans                        &trans                &trans                      &trans                              &trans                                &trans            &trans               &trans                  &trans                          &trans                           &trans                         &trans
 &kp DE_SECTION                &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES        &kp DE_HASH                         &kp DE_DOLLAR                         &kp DE_PERCENT    &kp DE_CARET         &kp DE_AMPS             &kp DE_ASTERISK                 &kp DE_LEFT_PARENTHESIS          &kp DE_RIGHT_PARENTHESIS       &kp DE_QUESTION
-&hml DE_POUND_SIGN DE_GRAVE   &hml LEFT_CONTROL N1  &hml LEFT_ALT RIGHT_ALT     &hml LEFT_GUI DE_EQUAL              &hml LEFT_SHIFT DE_LESS_THAN          &kp DE_TILDE      &kp RIGHT_ALT        &hmr RIGHT_SHIFT DE_MINUS &hmr RIGHT_GUI DE_PLUS        &hmr RIGHT_ALT DE_AT            &hmr RIGHT_CONTROL ENTER       &hmr DE_PIPE DE_BACKSLASH
-&kp DE_DEGREE                 &trans                &kp RIGHT_ALT               &hml DE_LEFT_BRACKET DE_LEFT_BRACE  &hml DE_RIGHT_BRACKET DE_RIGHT_BRACE  &kp DE_UMLAUT     &kp DE_SLASH         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_COLON                   &kp DE_SEMICOLON
+&hml DE_POUND_SIGN DE_GRAVE   &hml LEFT_CONTROL N1  &hml LEFT_ALT RIGHT_ALT     &hml LEFT_GUI DE_EQUAL              &hml LEFT_SHIFT DE_MINUS              &kp DE_TILDE      &kp DE_SLASH         &hmr RIGHT_SHIFT DE_LEFT_BRACKET &hmr RIGHT_GUI DE_RIGHT_BRACKET  &hmr RIGHT_ALT DE_AT         &hmr RIGHT_CONTROL ENTER       &hmr DE_PIPE DE_BACKSLASH
+&kp DE_DEGREE                 &trans                &kp RIGHT_ALT               &hml DE_LEFT_BRACE DE_LESS_THAN     &hml DE_RIGHT_BRACE DE_GREATER_THAN   &kp DE_UMLAUT     &kp DE_UNDERSCORE    &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_COLON                   &kp DE_SEMICOLON
                                                                                 &trans                              &kp BACKSPACE                         &trans            &trans               &kp DE_N0
                                                                                                                     &trans                                &trans            &trans
             >;
@@ -169,9 +169,9 @@
             bindings = <
 &trans      &trans    &trans         &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
 &kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
-&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
-&trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
-                                     &trans          &trans            &trans        &trans  &kp PRINTSCREEN
+&kp TAB     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI   &kp C_PREVIOUS  &trans  &kp HOME         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp DELETE
+&trans      &kp PAGE_UP     &kp PAGE_DOWN     &kp C_PLAY_PAUSE  &kp C_NEXT   &kp PRINTSCREEN &trans  &kp END          &kp RIGHT_ARROW &kp PAGE_DOWN   &kp PAGE_UP      &kp INSERT
+                                     &trans          &trans            &trans        &trans  &trans
                                                      &trans            &trans        &trans
             >;
 
