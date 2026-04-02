@@ -52,19 +52,19 @@
         to-BASE {
             bindings = <&to 0>;
             key-positions = <50 51>;
-            layers = <6 11>;
+            layers = <3 6>;
         };
 
         to-POINTER {
-            bindings = <&to 6>;
+            bindings = <&to 3>;
             key-positions = <47 36>;
-            layers = <0 11>;
+            layers = <0 6>;
         };
 
         to-FNBT {
-            bindings = <&to 11>;
+            bindings = <&to 6>;
             key-positions = <41 42>;
-            layers = <0 6>;
+            layers = <0 3>;
         };
 
         caps_word {
