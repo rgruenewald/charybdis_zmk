@@ -24,6 +24,17 @@
 
 // https://github.com/badjeff/zmk-pmw3610-driver
 / {
+};
+
+&spi0 {
+    status = "okay";
+};
+
+&trackball {
+    status = "okay";
+};
+
+/ {
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
