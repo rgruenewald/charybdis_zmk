@@ -240,12 +240,12 @@ jobs:
     needs: build
     name: Merge & Prune Artifacts (optional)
     steps:
-      - name: Upload Charybdis ZMK Firmware (QWERTY BT)
+      - name: Upload Charybdis ZMK Firmware (Colemak-DH BT)
         continue-on-error: true
         uses: actions/upload-artifact/merge@v4
         with:
-          pattern: artifact-charybdis_qwerty_{left,right}
-          name: firmware-charybdis-qwerty
+          pattern: artifact-charybdis_colemak_dh_{left,right}
+          name: firmware-charybdis-colemak-dh
           delete-merged: true
 
       # - name: Upload Charybdis ZMK Firmware (QWERTY Dongle)
