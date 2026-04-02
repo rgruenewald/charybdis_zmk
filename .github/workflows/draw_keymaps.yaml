@@ -1,5 +1,9 @@
 # Reusable workflow for drawing and committing an automated keymap diagram
 name: Draw ZMK keymaps
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   workflow_call:
     inputs:
