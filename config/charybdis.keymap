@@ -165,8 +165,8 @@
 &kp ESC         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J        &kp L               &kp U             &kp Y             &kp DE_O_UMLAUT                 &kp DE_U_UMLAUT
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G             &kp M        &hmr RIGHT_SHIFT N  &hml RIGHT_GUI E  &hml RIGHT_ALT I  &hml RIGHT_CONTROL O            &kp DE_A_UMLAUT
 &kp LEFT_SHIFT  &lt 3 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_DOT        &lt 3 DE_MINUS                  &kp RIGHT_SHIFT
-                                                      &lt 2 TAB        &kp SPACE          &lt 1 LEFT_GUI    &mkp MB1     &mkp MB2
-                                                                       &kp ENTER          &kp BACKSPACE    &mo 2
+                                                      &lt 1 LEFT_GUI   &kp BACKSPACE      &lt 2 TAB         &mkp MB2     &mkp MB1
+                                                                       &kp SPACE          &kp ENTER        &mo 2
             >;
 
             sensor-bindings =
