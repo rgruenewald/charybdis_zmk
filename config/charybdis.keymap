@@ -71,15 +71,12 @@
         time-to-live-ms = <750>;
     };
 
-    // #define MAC       0
-    // #define MACNUM    1
-    // #define MACNAV    2
-    // #define WIN       3
-    // #define WNUM      4
-    // #define WNAV      5
-    // #define SCROLL    6
-    // #define SNIPER    7
-    // #define BT-RGB    8
+    // #define BASE      0
+    // #define SYMNUM    1
+    // #define NAVSYS    2
+    // #define SCROLL    3
+    // #define SNIPER    4
+    // #define FNBT      5
 
     combos {
         compatible = "zmk,combos";
@@ -94,20 +91,8 @@
             key-positions = <16 19>;
         };
 
-        to_WIN {
-            bindings = <&to 3>;
-            key-positions = <39 38>;
-            layers = <0 8>;
-        };
-
-        to_MAC {
-            bindings = <&to 0>;
-            key-positions = <38 39>;
-            layers = <3 8>;
-        };
-
-        to_BT_RGB {
-            bindings = <&to 8>;
+        to_FNBT {
+            bindings = <&to 5>;
             key-positions = <30 29>;
         };
 
@@ -173,47 +158,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_alt_layer {
-            bindings = <
-&kp ESC         &kp Q                &kp W            &kp E            &kp R                    &kp T             &kp DE_Z     &kp U                             &kp I             &kp O             &kp P                           &kp DE_U_UMLAUT
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F        &kp G             &kp H        &hmr RIGHT_SHIFT J                &hml RIGHT_GUI K  &hml RIGHT_ALT L  &hml RIGHT_CONTROL DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &lt 6 DE_Y           &kp X            &kp C            &kp V                    &kp B             &kp N        &kp M                             &kp DE_COMMA      &kp DE_DOT        &lt 6 DE_MINUS                  &kp RIGHT_SHIFT
-                                                      &lt 2 TAB        &hml LG(LEFT_ALT) SPACE  &lt 1 LEFT_GUI    &lt 1 ENTER  &hmr RA(RC(RIGHT_GUI)) BACKSPACE  &lt 2 ENTER
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
-            label = "MAC";
-        };
-
-        symnum_alt_layer {
-            bindings = <
-&kp DE_LESS_THAN              &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES      &hml DE_HASH DE_ASTERISK  &hml DE_CENT DE_C_CEDILLA       &kp DE_PERCENT     &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
-&hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_SECTION  &hml LEFT_GUI DE_EQUAL    &hml LEFT_SHIFT LS(DE_SECTION)  &hml LEFT_ALT N    &kp DE_PLUS          &hmr RIGHT_SHIFT DE_N4  &hmr RIGHT_GUI DE_N5            &hmr RIGHT_ALT DE_N6             &hmr RIGHT_CONTROL LA(RETURN)  &hmr DE_BROKEN_BAR DE_PIPE
-&kp DE_CARET                  &trans                &kp DE_AT                 &hml LA(DE_N8) LA(DE_N5)  &hml LA(DE_N9) LA(DE_N6)        &kp DE_UMLAUT      &kp DE_MINUS         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_DOT                     &kp LA(LS(DE_N7))
-                                                                              &trans                    &kp BACKSPACE                   &trans             &trans               &trans                  &kp DE_N0
-            >;
-
-            label = "MACNUM";
-        };
-
-        navsys_alt_layer {
-            bindings = <
-&kp F1  &kp F2    &kp F3         &kp F4      &kp F5            &kp F6        &kp F7                &kp F8                &kp F9          &kp F10       &kp F11          &kp F12
-&trans  &kp HOME  &kp PAGE_UP    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans                &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp END   &kp PAGE_DOWN  &trans      &trans            &trans        &trans                &trans                &trans          &trans        &trans           &trans
-                                 &trans      &trans            &trans        &kp LG(LS(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans
-            >;
-
-            label = "MACNAV";
-        };
-
         base_layer {
             label = "BASE";
             bindings = <
 &kp ESC         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J        &kp L               &kp U             &kp Y             &kp DE_O_UMLAUT                 &kp DE_U_UMLAUT
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G             &kp M        &hmr RIGHT_SHIFT N  &hml RIGHT_GUI E  &hml RIGHT_ALT I  &hml RIGHT_CONTROL O            &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &lt 6 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_DOT        &lt 6 DE_MINUS                  &kp RIGHT_SHIFT
-                                                      &lt 5 TAB        &kp SPACE          &lt 4 LEFT_GUI    &mkp MB1    &mkp MB2            &lt 5 ENTER
+&kp LEFT_SHIFT  &lt 3 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_DOT        &lt 3 DE_MINUS                  &kp RIGHT_SHIFT
+                                                      &lt 2 TAB        &kp SPACE          &lt 1 LEFT_GUI    &mkp MB1    &mkp MB2            &lt 2 ENTER
             >;
 
             sensor-bindings =
