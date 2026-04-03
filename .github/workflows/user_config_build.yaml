@@ -1,5 +1,8 @@
 name: Reusable user config build
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   workflow_call:
     inputs:
@@ -37,7 +40,7 @@ jobs:
       build_matrix: ${{ env.build_matrix }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install yaml2json
         run: python3 -m pip install remarshal
@@ -58,7 +61,7 @@ jobs:
       matrix: ${{ fromJson(needs.matrix.outputs.build_matrix) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create build directory
         run: |
@@ -97,7 +100,7 @@ jobs:
           echo "artifact_name=${artifact_name:-${shield:+$shield-}${board}-zmk}" >> $GITHUB_ENV
 
       - name: Download keymaps
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: keymap_files
           path: "${{ github.workspace }}/"
@@ -159,7 +162,7 @@ jobs:
           tree "${GITHUB_WORKSPACE}/boards/shields"
 
       - name: Cache west modules
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         continue-on-error: true
         env:
           cache_name: cache-zephyr-${{ env.zephyr_version }}-modules
@@ -229,7 +232,7 @@ jobs:
           fi
 
       - name: Upload (${{ env.display_name }})
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifact-${{ env.artifact_name }}
           path: ${{ env.build_dir }}/artifacts
@@ -238,23 +241,8 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     needs: build
-    name: Merge & Prune Artifacts (optional)
+    name: Artifact Cleanup (optional)
     steps:
-      - name: Upload Charybdis ZMK Firmware (QWERTY BT)
-        continue-on-error: true
-        uses: actions/upload-artifact/merge@v4
-        with:
-          pattern: artifact-charybdis_mini_{LEFT,RIGHT}
-          name: firmware-charybdis-mini
-          delete-merged: true
-
-      - name: Upload Charybdis ZMK Firmware (QWERTY Dongle)
-        continue-on-error: true
-        uses: actions/upload-artifact/merge@v4
-        with:
-          pattern: artifact-charybdis_mini_dongle*
-          name: firmware-charybdis-mini-dongle
-          delete-merged: true
 
       # - name: Upload Charybdis ZMK Firmware (Colemak BT)
       #   continue-on-error: true
@@ -282,6 +270,6 @@ jobs:
 
       - name: Delete keymap artifacts
         continue-on-error: true
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: keymap_files

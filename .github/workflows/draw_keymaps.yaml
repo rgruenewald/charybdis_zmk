@@ -1,5 +1,9 @@
 # Reusable workflow for drawing and committing an automated keymap diagram
 name: Draw ZMK keymaps
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   workflow_call:
     inputs:
@@ -85,7 +89,7 @@ jobs:
       drawings: ${{ steps.artifact-upload-step.outputs.artifact-id }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # So the reference to the parent commit is available when amending
           # See:
@@ -109,7 +113,7 @@ jobs:
 
       - name: Cache west modules
         if: inputs.west_config_path != ''
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         continue-on-error: true
         env:
           cache_name: cache-zephyr-3.5.0-modules
@@ -233,7 +237,7 @@ jobs:
 
       - name: Commit updated images
         if: ( inputs.destination == 'commit' || inputs.destination == 'both' )
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           file_pattern: "${{ inputs.output_folder }}/*.svg ${{ inputs.output_folder }}/*.yaml"
           # So the previous commit is amended instead of creating a new one when desired
@@ -249,7 +253,7 @@ jobs:
       - name: Artifact upload
         id: artifact-upload-step
         if: ( inputs.destination == 'artifact' || inputs.destination == 'both' )
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: "${{ inputs.artifact_name }}"
           path: |
