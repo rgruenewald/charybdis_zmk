@@ -54,8 +54,8 @@ layers:
   - {t: LEFT GUI, h: SYMNUM}
   - '&mkp MB1'
   - '&mkp MB2'
-  - ENTER
   - BACK SPACE
+  - ENTER
   - NAVSYS
   SYMNUM:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))

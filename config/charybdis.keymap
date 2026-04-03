@@ -166,7 +166,7 @@
 &kp LEFT_SHIFT  &lt 3 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_DOT        &lt 3 DE_MINUS                  &kp RIGHT_SHIFT
 &trans          &trans               &trans           &trans           &trans             &trans            &trans       &trans              &trans            &trans            &trans                          &trans
                                                       &lt 2 TAB        &kp SPACE          &lt 1 LEFT_GUI    &mkp MB1     &mkp MB2
-                                                                       &kp ENTER          &kp BACKSPACE    &mo 2
+                                                                       &kp BACKSPACE      &kp ENTER        &mo 2
             >;
 
             sensor-bindings =
