@@ -145,8 +145,8 @@
 &kp TAB         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J        &kp L               &kp U             &kp Y             &kp DE_O_UMLAUT                 &kp DE_U_UMLAUT
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G             &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O            &kp DE_A_UMLAUT
 &kp LEFT_SHIFT  &lt 5 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_PERIOD     &lt 5 DE_MINUS                  &kp RSHIFT
-                                                      &lt 1 TAB        &kp SPACE          &lt 2 LEFT_GUI    &kp ENTER   &kp BACKSPACE
-                                                                       &mkp RCLK          &mkp LCLK         &mo 2
+                                                      &lt 1 TAB        &kp SPACE          &lt 2 LEFT_GUI    &mkp MB1     &mkp MB2
+                                                                       &kp ENTER          &kp BACKSPACE    &mo 2
             >;
 
             label = "BASE";
