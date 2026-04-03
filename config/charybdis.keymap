@@ -177,12 +177,12 @@
         symnum_layer {
             label = "SYMNUM";
             bindings = <
-&kp DE_SECTION               &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES     &hml DE_HASH DE_ASTERISK         &hml DE_CENT DE_C_CEDILLA            &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7               &hmr DE_LEFT_PARENTHESIS DE_N8   &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
-&hml DE_POUND_SIGN DE_GRAVE  &hml LEFT_CONTROL N1  &hml LEFT_ALT RIGHT_ALT  &hml LEFT_GUI DE_EQUAL           &hml LEFT_SHIFT DE_MINUS             &kp DE_TILDE      &kp DE_SLASH         &hmr RIGHT_SHIFT DE_LEFT_BRACKET  &hmr RIGHT_GUI DE_RIGHT_BRACKET  &hmr RIGHT_ALT DE_AT             &hmr RIGHT_CONTROL ENTER       &hmr DE_PIPE DE_BACKSLASH
-&kp DE_DEGREE                &trans                &kp RIGHT_ALT            &hml DE_LEFT_BRACE DE_LESS_THAN  &hml DE_RIGHT_BRACE DE_GREATER_THAN  &kp DE_UMLAUT     &kp DE_UNDERSCORE    &kp DE_N1                         &kp DE_N2                        &kp DE_N3                        &kp DE_COLON                   &kp DE_SEMICOLON
-&trans                       &trans                &trans                   &trans                           &kp BACKSPACE                        &trans            &trans               &trans                            &trans                           &trans                           &trans                         &kp DE_N0
-                                                                            &trans                           &trans                               &trans            &trans               &trans
-                                                                                                             &trans                               &trans            &trans
+&trans  &kp DE_DEGREE         &kp DE_SECTION                   &hml DOLLAR DE_EURO        &kp AMPS                       &kp DE_PERCENT      &trans        &trans        &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &hmr DE_GRAVE DE_QUESTION
+&trans  &hml LEFT_CONTROL N1  &kp EXCL                         &kp LEFT_BRACKET           &kp RIGHT_BRACKET              &kp PLUS            &trans        &kp N7        &kp N8         &kp N9           &kp KP_PLUS   &trans
+&trans  &kp PIPE              &hml SINGLE_QUOTE DOUBLE_QUOTES  &hml LESS_THAN LEFT_BRACE  &hml GREATER_THAN RIGHT_BRACE  &kp MINUS           &kp QUESTION  &kp NUMBER_4  &kp NUMBER_5   &kp N6           &kp KP_ENTER  &trans
+&trans  &hml HASH ASTRK       &hml BACKSLASH SLASH             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &hml EQUAL UNDER    &kp N0        &kp N1        &kp NUMBER_2   &kp NUMBER_3     &trans        &trans
+                                                               &trans                     &trans                         &trans              &trans        &trans
+                                                                                          &trans                         &trans              &trans
             >;
         };
 
