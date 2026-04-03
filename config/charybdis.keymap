@@ -177,8 +177,8 @@
         symnum_layer {
             label = "SYMNUM";
             bindings = <
-&trans  &kp DE_DEGREE         &kp DE_SECTION                   &hml DOLLAR DE_EURO        &kp AMPS                       &kp DE_PERCENT      &trans        &trans        &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &hmr DE_GRAVE DE_QUESTION
-&trans  &hml LEFT_CONTROL N1  &kp EXCL                         &kp LEFT_BRACKET           &kp RIGHT_BRACKET              &kp PLUS            &trans        &kp N7        &kp N8         &kp N9           &kp KP_PLUS   &trans
+&trans  &hml CARET DE_DEGREE  &kp DE_SECTION                   &hml DOLLAR DE_EURO        &kp AMPS                       &kp DE_PERCENT      &trans        &trans        &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans
+&trans  &hml DE_GRAVE GRAVE   &kp EXCL                         &kp LEFT_BRACKET           &kp RIGHT_BRACKET              &kp PLUS            &trans        &kp N7        &kp N8         &kp N9           &kp KP_PLUS   &trans
 &trans  &kp PIPE              &hml SINGLE_QUOTE DOUBLE_QUOTES  &hml LESS_THAN LEFT_BRACE  &hml GREATER_THAN RIGHT_BRACE  &kp MINUS           &kp QUESTION  &kp NUMBER_4  &kp NUMBER_5   &kp N6           &kp KP_ENTER  &trans
 &trans  &hml HASH ASTRK       &hml BACKSLASH SLASH             &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS          &hml EQUAL UNDER    &kp N0        &kp N1        &kp NUMBER_2   &kp NUMBER_3     &trans        &trans
                                                                &trans                     &trans                         &trans              &trans        &trans
