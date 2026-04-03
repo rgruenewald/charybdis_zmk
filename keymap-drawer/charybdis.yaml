@@ -129,50 +129,50 @@ layers:
   - Gui+Sft+ 4
   - Sft+Gui+ 5
   - {t: ▽, type: trans}
-  WIN:
+  BASE:
   - ESC
   - Q
   - W
-  - E
-  - R
-  - T
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
   - DELETE
   - {t: A, h: LEFT CONTROL}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT GUI}
-  - {t: F, h: LEFT SHIFT}
+  - {t: R, h: LEFT ALT}
+  - {t: S, h: LEFT GUI}
+  - {t: T, h: LEFT SHIFT}
   - G
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: RIGHT ALT}
-  - '&hml RIGHT_CONTROL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
+  - M
+  - {t: N, h: RIGHT SHIFT}
+  - {t: E, h: RIGHT GUI}
+  - {t: I, h: RIGHT ALT}
+  - {t: O, h: RIGHT CONTROL}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
   - LEFT SHIFT
-  - '&lt 6 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))'
-  - X
+  - {t: X, h: SCROLL}
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - K
+  - H
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - '&lt 6 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
   - RIGHT SHIFT
-  - {t: TAB, h: WNAV}
+  - {t: TAB, h: NAVSYS}
   - SPACE
-  - {t: LEFT GUI, h: WNUM}
-  - {t: ENTER, h: WNUM}
-  - BACK SPACE
-  - {t: ENTER, h: WNAV}
-  WNUM:
+  - {t: LEFT GUI, h: SYMNUM}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - {t: ENTER, h: NAVSYS}
+  SYMNUM:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT)))
@@ -215,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))
-  WNAV:
+  NAVSYS:
   - F1
   - F2
   - F3
@@ -228,36 +228,36 @@ layers:
   - F10
   - F11
   - DEV TOOLS
+  - TAB
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - PREV
   - {t: ▽, type: trans}
   - HOME
-  - PAGE UP
-  - PREV
-  - PLAY PAUSE
-  - NEXT
-  - {t: ▽, type: trans}
   - LEFT
-  - DOWN ARROW
   - UP ARROW
   - RIGHT
+  - DELETE
   - {t: ▽, type: trans}
+  - PAGE UP
+  - PAGE DOWN
+  - PLAY PAUSE
+  - NEXT
+  - PRINT SCREEN
   - {t: ▽, type: trans}
   - END
-  - PAGE DOWN
   - {t: ▽, type: trans}
+  - DOWN ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - INSERT
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PRINT SCREEN
   - {t: ▽, type: trans}
-  - PRINT SCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -284,7 +284,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -393,11 +393,11 @@ combos:
 - p: [16, 19]
   k: CAPS WORD
 - p: [39, 38]
-  k: {t: WIN, h: toggle}
+  k: {t: BASE, h: toggle}
   l: [MAC, BT-RGB]
 - p: [38, 39]
   k: {t: MAC, h: toggle}
-  l: [WIN, BT-RGB]
+  l: [BASE, BT-RGB]
 - p: [30, 29]
   k: {t: BT-RGB, h: toggle}
 - p: [28, 27]
