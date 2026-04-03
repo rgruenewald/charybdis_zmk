@@ -52,10 +52,10 @@ layers:
   - {t: TAB, h: SYMNUM}
   - SPACE
   - {t: LEFT GUI, h: NAVSYS}
-  - '&mkp MB1'
-  - '&mkp MB2'
   - ENTER
   - BACK SPACE
+  - '&mkp MB1'
+  - '&mkp MB2'
   - NAVSYS
   SYMNUM:
   - {t: ▽, type: trans}
@@ -147,9 +147,9 @@ layers:
   - PREVIOUS
   - {t: ▽, type: trans}
   - HOME
-  - UP ARROW
   - LEFT
-  - {t: ▽, type: trans}
+  - UP ARROW
+  - RIGHT
   - DELETE
   - {t: ▽, type: trans}
   - PAGE UP
@@ -161,7 +161,7 @@ layers:
   - END
   - {t: ▽, type: trans}
   - DOWN ARROW
-  - RIGHT
+  - {t: ▽, type: trans}
   - INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

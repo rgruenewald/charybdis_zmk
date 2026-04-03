@@ -145,8 +145,8 @@
 &kp TAB         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J        &kp L               &kp U             &kp Y             &kp DE_O_UMLAUT                 &kp DE_U_UMLAUT
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G             &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O            &kp DE_A_UMLAUT
 &kp LEFT_SHIFT  &lt 5 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_PERIOD     &lt 5 DE_MINUS                  &kp RSHIFT
-                                                      &lt 1 TAB        &kp SPACE          &lt 2 LEFT_GUI    &mkp MB1     &mkp MB2
-                                                                       &kp ENTER          &kp BACKSPACE    &mo 2
+                                                      &lt 1 TAB        &kp SPACE          &lt 2 LEFT_GUI    &kp ENTER    &kp BACKSPACE
+                                                                       &mkp MB1           &mkp MB2         &mo 2
             >;
 
             label = "BASE";
@@ -169,8 +169,8 @@
             bindings = <
 &trans      &trans    &trans         &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
 &kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
-&kp TAB     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI   &kp C_PREVIOUS  &trans  &kp HOME         &kp UP_ARROW    &kp LEFT_ARROW  &trans           &kp DELETE
-&trans      &kp PAGE_UP     &kp PAGE_DOWN     &kp C_PLAY_PAUSE  &kp C_NEXT   &kp PRINTSCREEN &trans  &kp END          &trans          &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT
+&kp TAB     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI   &kp C_PREVIOUS  &trans  &kp HOME         &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp DELETE
+&trans      &kp PAGE_UP     &kp PAGE_DOWN     &kp C_PLAY_PAUSE  &kp C_NEXT   &kp PRINTSCREEN &trans  &kp END          &trans          &kp DOWN_ARROW  &trans           &kp INSERT
                                      &trans          &trans            &trans        &trans  &trans
                                                      &trans            &trans        &trans
             >;
