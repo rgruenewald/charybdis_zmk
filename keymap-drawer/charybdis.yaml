@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
-  - ESC
+  - TAB
   - Q
   - W
   - F
@@ -25,7 +25,7 @@ layers:
   - Y
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
-  - DELETE
+  - LEFT SHIFT
   - {t: A, h: LEFT CONTROL}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LEFT GUI}
@@ -37,7 +37,7 @@ layers:
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT CONTROL}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
-  - LEFT SHIFT
+  - LEFT CONTROL
   - {t: X, h: SCROLL}
   - C
   - D
@@ -127,12 +127,12 @@ layers:
   - F10
   - F11
   - DEV TOOLS
-  - TAB
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT CONTROL
-  - LEFT ALT
-  - LEFT GUI
-  - PREV
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE UP
   - UP ARROW
@@ -140,11 +140,11 @@ layers:
   - {t: ▽, type: trans}
   - DELETE
   - {t: ▽, type: trans}
-  - PAGE UP
-  - PAGE DOWN
+  - VOL DN
+  - PREV
   - PLAY PAUSE
   - NEXT
-  - PRINT SCREEN
+  - VOL UP
   - HOME
   - LEFT
   - DOWN ARROW
@@ -156,7 +156,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PRINT SCREEN
   - {t: ▽, type: trans}
   - PAGE DOWN
   - {t: ▽, type: trans}

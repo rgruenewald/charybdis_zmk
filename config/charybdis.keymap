@@ -161,12 +161,12 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5       &kp N6     &kp N7              &kp N8           &kp N9            &kp N0                &kp DE_SQT
-&kp ESC         &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J      &kp L               &kp U            &kp Y             &kp DE_O_UMLAUT       &kp DE_U_UMLAUT
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G        &kp M      &hmr RIGHT_SHIFT N  &hml LEFT_GUI E  &hml RIGHT_ALT I  &hml RIGHT_CONTROL O  &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &lt 3 X              &kp C            &kp D            &kp V              &kp DE_Z     &kp K      &kp H               &kp DE_COMMA     &kp DE_DOT        &lt 3 DE_MINUS        &kp RIGHT_SHIFT
-                                                      &lt 1 LEFT_GUI   &kp SPACE          &lt 2 TAB    &kp ENTER  &kp BACKSPACE
-                                                                       &mkp MB1           &mkp MB2     &mo 1
+&kp ESCAPE        &kp N1               &kp N2           &kp N3           &kp N4             &kp N5       &kp N6     &kp N7              &kp N8           &kp N9            &kp N0                &kp DE_SQT
+&kp TAB           &kp Q                &kp W            &kp F            &kp P              &kp B        &kp J      &kp L               &kp U            &kp Y             &kp DE_O_UMLAUT       &kp DE_U_UMLAUT
+&kp LEFT_SHIFT    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G        &kp M      &hmr RIGHT_SHIFT N  &hmr LEFT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp DE_A_UMLAUT
+&kp LEFT_CONTROL  &lt 3 X              &kp C            &kp D            &kp V              &kp DE_Z     &kp K      &kp H               &kp DE_COMMA     &kp DE_DOT        &lt 3 DE_MINUS        &kp RIGHT_SHIFT
+                                                        &lt 1 LEFT_GUI   &kp SPACE          &lt 2 TAB    &kp ENTER  &kp BACKSPACE
+                                                                         &mkp MB1           &mkp MB2     &mo 1
             >;
 
             sensor-bindings =
@@ -189,12 +189,12 @@
         navsys_layer {
             label = "NAVSYS";
             bindings = <
-&kp F1   &kp F2          &kp F3            &kp F4            &kp F5        &kp F6             &kp F7    &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
-&kp TAB  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI  &kp C_PREV         &trans    &kp PAGE_UP     &kp UP_ARROW    &trans           &trans   &kp DELETE
-&trans   &kp PAGE_UP     &kp PAGE_DOWN     &kp C_PLAY_PAUSE  &kp C_NEXT    &kp PRINTSCREEN    &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp INSERT
-&trans   &trans          &trans            &trans            &trans        &trans             &trans    &kp PAGE_DOWN   &trans          &trans           &trans   &trans
-                                           &trans            &trans        &trans             &trans    &trans
-                                                             &trans        &trans             &trans
+&kp F1  &kp F2        &kp F3            &kp F4            &kp F5      &kp F6             &kp F7    &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
+&trans  &trans        &kp LEFT_CONTROL  &trans            &trans      &trans             &trans    &kp PAGE_UP     &kp UP_ARROW    &trans           &trans   &kp DELETE
+&trans  &kp C_VOL_DN  &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_UP       &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp INSERT
+&trans  &trans        &trans            &trans            &trans      &kp PRINTSCREEN    &trans    &kp PAGE_DOWN   &trans          &trans           &trans   &trans
+                                        &trans            &trans      &trans             &trans    &trans
+                                                          &trans      &trans             &trans
             >;
         };
 
