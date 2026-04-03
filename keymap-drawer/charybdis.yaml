@@ -50,11 +50,11 @@ layers:
   - '&lt 3 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
   - RIGHT SHIFT
   - {t: LEFT GUI, h: SYMNUM}
-  - '&mkp MB2'
+  - '&mkp MB1'
   - {t: TAB, h: NAVSYS}
   - A
   - B
-  - '&mkp MB1'
+  - '&mkp MB2'
   - SPACE
   - C
   SYMNUM:
