@@ -147,8 +147,8 @@ layers:
   - PREVIOUS
   - {t: ▽, type: trans}
   - HOME
-  - LEFT
   - UP ARROW
+  - LEFT
   - {t: ▽, type: trans}
   - DELETE
   - {t: ▽, type: trans}
