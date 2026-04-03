@@ -52,10 +52,10 @@ layers:
   - {t: TAB, h: SYMNUM}
   - SPACE
   - {t: LEFT GUI, h: NAVSYS}
-  - ENTER
-  - BACK SPACE
   - '&mkp MB1'
   - '&mkp MB2'
+  - ENTER
+  - BACK SPACE
   - NAVSYS
   SYMNUM:
   - {t: ▽, type: trans}
