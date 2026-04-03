@@ -161,12 +161,12 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                         &kp DE_SQT
-&kp ESC         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J        &kp L               &kp U             &kp Y             &kp DE_O_UMLAUT                 &kp DE_U_UMLAUT
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G             &kp M        &hmr RIGHT_SHIFT N  &hml RIGHT_GUI E  &hml RIGHT_ALT I  &hml RIGHT_CONTROL O            &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &lt 3 X               &kp C            &kp D            &kp V              &kp DE_Z          &kp K        &kp H               &kp DE_COMMA      &kp DE_DOT        &lt 3 DE_MINUS                  &kp RIGHT_SHIFT
-                                                      &lt 1 LEFT_GUI   &kp BACKSPACE      &lt 2 TAB         &mkp MB2     &mkp MB1
-                                                                       &kp SPACE          &kp ENTER        &mo 2
+&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6     &kp N7              &kp N8            &kp N9            &kp N0                &kp DE_SQT
+&kp ESC         &kp Q                &kp W            &kp F            &kp P              &kp B             &kp J      &kp L               &kp U             &kp Y             &kp DE_O_UMLAUT       &kp DE_U_UMLAUT
+&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G             &kp M      &hmr RIGHT_SHIFT N  &hml RIGHT_GUI E  &hml RIGHT_ALT I  &hml RIGHT_CONTROL O  &kp DE_A_UMLAUT
+&kp LEFT_SHIFT  &lt 3 X              &kp C            &kp D            &kp V              &kp DE_Z          &kp K      &kp H               &kp DE_COMMA      &kp DE_DOT        &lt 3 DE_MINUS        &kp RIGHT_SHIFT
+                                                      &lt 2 TAB        &kp SPACE          &lt 1 LEFT_GUI    &kp ENTER  &kp BACKSPACE
+                                                                       &mkp MB1           &mkp MB2          &mo 2
             >;
 
             sensor-bindings =
@@ -177,35 +177,35 @@
         symnum_layer {
             label = "SYMNUM";
             bindings = <
-&kp DE_SECTION                &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES        &hml DE_HASH DE_ASTERISK            &hml DE_CENT DE_C_CEDILLA             &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
-&hml DE_POUND_SIGN DE_GRAVE   &hml LEFT_CONTROL N1  &hml LEFT_ALT RIGHT_ALT     &hml LEFT_GUI DE_EQUAL              &hml LEFT_SHIFT DE_MINUS              &kp DE_TILDE      &kp DE_SLASH         &hmr RIGHT_SHIFT DE_LEFT_BRACKET &hmr RIGHT_GUI DE_RIGHT_BRACKET  &hmr RIGHT_ALT DE_AT            &hmr RIGHT_CONTROL ENTER       &hmr DE_PIPE DE_BACKSLASH
-&kp DE_DEGREE                 &trans                &kp RIGHT_ALT               &hml DE_LEFT_BRACE DE_LESS_THAN     &hml DE_RIGHT_BRACE DE_GREATER_THAN   &kp DE_UMLAUT     &kp DE_UNDERSCORE    &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_COLON                   &kp DE_SEMICOLON
-&trans                        &trans                &trans                      &trans                              &kp BACKSPACE                         &trans            &trans               &trans                  &trans                          &trans                           &trans                         &kp DE_N0
-                                                      &trans           &trans             &trans             &trans      &trans
-                                                                       &trans             &trans            &trans
+&kp DE_SECTION               &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES     &hml DE_HASH DE_ASTERISK         &hml DE_CENT DE_C_CEDILLA            &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7               &hmr DE_LEFT_PARENTHESIS DE_N8   &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
+&hml DE_POUND_SIGN DE_GRAVE  &hml LEFT_CONTROL N1  &hml LEFT_ALT RIGHT_ALT  &hml LEFT_GUI DE_EQUAL           &hml LEFT_SHIFT DE_MINUS             &kp DE_TILDE      &kp DE_SLASH         &hmr RIGHT_SHIFT DE_LEFT_BRACKET  &hmr RIGHT_GUI DE_RIGHT_BRACKET  &hmr RIGHT_ALT DE_AT             &hmr RIGHT_CONTROL ENTER       &hmr DE_PIPE DE_BACKSLASH
+&kp DE_DEGREE                &trans                &kp RIGHT_ALT            &hml DE_LEFT_BRACE DE_LESS_THAN  &hml DE_RIGHT_BRACE DE_GREATER_THAN  &kp DE_UMLAUT     &kp DE_UNDERSCORE    &kp DE_N1                         &kp DE_N2                        &kp DE_N3                        &kp DE_COLON                   &kp DE_SEMICOLON
+&trans                       &trans                &trans                   &trans                           &kp BACKSPACE                        &trans            &trans               &trans                            &trans                           &trans                           &trans                         &kp DE_N0
+                                                                            &trans                           &trans                               &trans            &trans               &trans
+                                                                                                             &trans                               &trans            &trans
             >;
         };
 
         navsys_layer {
             label = "NAVSYS";
             bindings = <
-&kp F1          &kp F2            &kp F3            &kp F4            &kp F5             &kp F6           &kp F7       &kp F8             &kp F9            &kp F10           &kp F11                       &kp F12
-&kp TAB         &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI       &kp C_PREV       &trans       &kp HOME           &kp LEFT_ARROW    &kp UP_ARROW      &kp RIGHT_ARROW               &kp DELETE
-&trans          &kp PAGE_UP       &kp PAGE_DOWN     &kp C_PLAY_PAUSE  &kp C_NEXT         &kp PRINTSCREEN  &trans       &kp END            &trans            &kp DOWN_ARROW    &trans                        &kp INSERT
-&trans          &trans            &trans            &trans            &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-                                                      &trans            &trans             &trans            &trans      &trans
-                                                                       &trans             &trans            &trans
+&kp F1   &kp F2          &kp F3            &kp F4            &kp F5        &kp F6             &kp F7  &kp F8    &kp F9          &kp F10         &kp F11          &kp F12
+&kp TAB  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI  &kp C_PREV         &trans  &kp HOME  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp DELETE
+&trans   &kp PAGE_UP     &kp PAGE_DOWN     &kp C_PLAY_PAUSE  &kp C_NEXT    &kp PRINTSCREEN    &trans  &kp END   &trans          &kp DOWN_ARROW  &trans           &kp INSERT
+&trans   &trans          &trans            &trans            &trans        &trans             &trans  &trans    &trans          &trans          &trans           &trans
+                                           &trans            &trans        &trans             &trans  &trans
+                                                             &trans        &trans             &trans
             >;
         };
 
         scroll_layer {
             bindings = <
-&trans          &trans             &trans             &trans             &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-&trans          &kp LEFT_SHIFT     &kp LEFT_CONTROL   &kp LEFT_ALT       &kp LEFT_GUI       &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-&trans          &kp C_PREV         &kp C_PLAY_PAUSE   &kp C_NEXT         &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-&trans          &trans             &trans             &trans             &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-                                                      &trans            &trans             &trans            &mkp RCLK   &mkp LCLK
-                                                                       &trans             &trans            &trans
+&trans  &trans          &trans            &trans        &trans        &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans          &trans            &trans        &trans        &trans    &trans     &trans     &trans  &trans  &trans  &trans
+                                          &trans        &trans        &trans    &mkp RCLK  &mkp LCLK
+                                                        &trans        &trans    &trans
             >;
 
             label = "SCROLL";
@@ -213,12 +213,12 @@
 
         sniper_layer {
             bindings = <
-&trans          &trans             &trans             &trans             &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-&trans          &trans             &trans             &trans             &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-&trans          &trans             &trans             &trans             &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-&trans          &trans             &trans             &trans             &trans             &trans           &trans       &trans             &trans            &trans            &trans                        &trans
-                                                      &trans            &trans             &trans            &trans      &trans
-                                                                       &trans             &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
             >;
 
             label = "SNIPER";
@@ -226,12 +226,12 @@
 
         fnbt_layer {
             bindings = <
-&ext_power EP_TOG  &trans         &trans         &trans         &trans         &trans         &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &trans
-&bt BT_CLR         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI
-&trans             &trans         &trans         &trans         &trans         &trans         &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD
-&trans             &trans         &trans         &trans         &trans         &trans         &trans           &trans           &trans           &trans           &trans           &trans
-                                               &trans         &trans         &trans          &trans           &trans
-                                                                                         &trans           &trans           &trans
+&ext_power EP_TOG  &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &trans
+&bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI
+&trans             &trans        &trans        &trans        &trans        &trans          &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD
+&trans             &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
+                                               &trans        &trans        &trans          &trans           &trans
+                                                             &trans        &trans          &trans
             >;
 
             label = "FNBT";
