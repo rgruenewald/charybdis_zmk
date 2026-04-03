@@ -149,7 +149,7 @@ layers:
   - HOME
   - LEFT
   - UP ARROW
-  - RIGHT
+  - {t: ▽, type: trans}
   - DELETE
   - {t: ▽, type: trans}
   - PAGE UP
@@ -161,7 +161,7 @@ layers:
   - END
   - {t: ▽, type: trans}
   - DOWN ARROW
-  - {t: ▽, type: trans}
+  - RIGHT
   - INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
