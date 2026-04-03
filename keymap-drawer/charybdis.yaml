@@ -14,7 +14,7 @@ layers:
   - '0'
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - TAB
-  - Q
+  - {t: Q, h: SNIPER}
   - W
   - F
   - P
@@ -48,7 +48,7 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - '&lt 3 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
-  - RIGHT SHIFT
+  - {t: ▽, type: trans}
   - {t: LEFT GUI, h: SYMNUM}
   - SPACE
   - {t: TAB, h: NAVSYS}
@@ -242,7 +242,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
