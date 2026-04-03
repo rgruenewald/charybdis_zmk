@@ -129,7 +129,7 @@ layers:
   - DEV TOOLS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -138,7 +138,7 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DELETE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - VOL DN
   - PREV
