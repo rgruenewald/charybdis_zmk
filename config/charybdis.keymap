@@ -158,9 +158,9 @@
         scroll_layer {
             bindings = <
 &trans  &trans          &trans            &trans        &trans        &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans          &trans            &trans        &trans        &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans          &trans            &trans        &trans        &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &kp TAB         &kp Q             &kp W         &kp F         &kp P     &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &kp A             &kp R         &kp S         &kp T     &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp X           &kp C         &kp D         &kp V     &trans     &trans     &trans  &trans  &trans  &trans
                                           &trans        &trans        &trans    &mkp RCLK  &mkp LCLK
                                                         &trans        &trans    &trans
             >;

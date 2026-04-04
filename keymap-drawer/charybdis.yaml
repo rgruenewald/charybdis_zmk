@@ -127,23 +127,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - TAB
+  - Q
+  - W
+  - F
+  - P
   - {t: ▽, type: trans}
   - LEFT SHIFT
+  - A
+  - R
+  - S
+  - T
+  - {t: ▽, type: trans}
   - LEFT CONTROL
-  - LEFT ALT
-  - LEFT GUI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - X
+  - C
+  - D
+  - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
