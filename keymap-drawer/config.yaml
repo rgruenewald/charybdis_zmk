@@ -140,8 +140,10 @@ parse_config:
     GT: ">"
     QUESTION: "?"
     QUES: "?"
-  zmk_remove_keycode_prefix: []
+  zmk_remove_keycode_prefix:
+    - DE_
   zmk_keycode_map:
+    EURO: "€"
     EXCLAMATION: "!"
     EXCL: "!"
     AT_SIGN: "@"
