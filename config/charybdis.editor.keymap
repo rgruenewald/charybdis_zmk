@@ -32,7 +32,7 @@
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
-        layers = <4>;
+        layers = <3>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -45,7 +45,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
-        layers = <3>;
+        layers = <2>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -71,12 +71,12 @@
     };
 
     // #define BASE      0
-    // #define NAV_EDIT  2
-    // #define SCROLL    3
-    // #define SNIPER    4
-    // #define NUM_SYM   6
-    // #define SHORTCUTS 7
-    // #define SYSTEM    8
+    // #define NAV_EDIT  1
+    // #define SCROLL    2
+    // #define SNIPER    3
+    // #define NUM_SYM   4
+    // #define SHORTCUTS 5
+    // #define SYSTEM    6
 
     combos {
         compatible = "zmk,combos";
@@ -132,8 +132,8 @@
 &kp ESCAPE        &kp N1               &kp N2           &kp N3           &kp N4             &kp N5       &kp N6     &kp N7              &kp N8           &kp N9            &kp N0                &kp MINUS
 &kp TAB           &kp Q               &kp W            &kp F            &kp P              &kp B        &kp J      &kp L               &kp U            &kp Z             &kp SEMICOLON      &kp LEFT_BRACKET
 &kp LEFT_SHIFT    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G        &kp M      &hmr RIGHT_SHIFT N  &hmr LEFT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp APOSTROPHE
-&kp LEFT_CONTROL  &lt 3 X              &kp C            &kp D            &kp V              &kp Y        &kp K      &kp H               &kp COMMA     &kp DOT        &lt 3 SLASH        &kp RIGHT_BRACKET
-                                                        &lt 6 LEFT_GUI   &kp SPACE          &lt 2 TAB    &mo 7      &kp BACKSPACE
+&kp LEFT_CONTROL  &lt 2 X              &kp C            &kp D            &kp V              &kp Y        &kp K      &kp H               &kp COMMA     &kp DOT        &lt 2 SLASH        &kp RIGHT_BRACKET
+                                                        &lt 4 LEFT_GUI   &kp SPACE          &lt 1 TAB    &mo 5      &kp BACKSPACE
                                                                          &mkp MB1           &mkp MB2     &kp ENTER
             >;
 
@@ -146,8 +146,8 @@
             label = "NAV_EDIT";
             bindings = <
 &kp F1  &kp F2        &kp F3      &kp F4            &kp F5      &kp F6       &kp F7        &kp F8          &kp F9          &kp F10          &kp F11       &kp F12
-&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 6 DELETE    &lt 7 INSERT
-&trans  &kp LEFT_ALT  &msc MOVE_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 8 K_APP
+&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 4 DELETE    &lt 5 INSERT
+&trans  &kp LEFT_ALT  &msc MOVE_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 6 K_APP
 &trans  &kp LC(X)     &kp LC(C)   &kp LC(D)         &kp LC(V)          &kp LC(Z)    &trans        &mkp MCLK       &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp LC(F)        &trans
                                     &trans           &kp ENTER    &trans       &trans        &trans
                                                       &trans       &trans       &kp PRINTSCREEN
