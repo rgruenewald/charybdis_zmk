@@ -457,35 +457,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYSTEM:
-  - EP TOG
-  - BOOT LDR
-  - SOFT OFF
-  - SLEEP
-  - LOCK
   - {t: ▽, type: trans}
-  - PREV
-  - PLAY PAUSE
-  - NEXT
-  - MUTE
-  - VOL DN
-  - VOL UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SLEEP
+  - LOCK
+  - SOFT OFF
+  - BOOT LDR
+  - EP TOG
+  - PREV
+  - PLAY PAUSE
+  - NEXT
+  - VOL DN
+  - VOL UP
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
