@@ -413,37 +413,37 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ A
-  - Ctl+ S
-  - Ctl+ F
-  - Ctl+ R
-  - Ctl+ P
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
-  - Ctl+ Y
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ T
+  - Ctl+ Q
   - Ctl+ W
-  - Ctl+ N
-  - Ctl+ O
+  - Ctl+ F
+  - Ctl+ P
+  - Ctl+ B
+  - Ctl+ J
   - Ctl+ L
   - Ctl+ U
-  - Ctl+ K
-  - Ctl+ J
-  - Ctl+ I
-  - Ctl+ H
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Ctl+ Z
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ A
+  - Ctl+ R
+  - Ctl+ S
+  - Ctl+ T
+  - Ctl+ G
+  - Ctl+ M
+  - Ctl+ N
+  - Ctl+ E
+  - Ctl+ I
+  - Ctl+ O
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctl+ X
   - Ctl+ C
+  - Ctl+ D
   - Ctl+ V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ Y
+  - Ctl+ K
+  - Ctl+ H
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
