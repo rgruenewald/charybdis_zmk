@@ -217,9 +217,9 @@
             label = "NUM_SYM";
             bindings = <
 &trans  &kp EXCL    &kp AT_SIGN     &kp HASH      &kp DOLLAR     &kp PERCENT    &kp CARET     &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_MULTIPLY  &kp KP_MINUS
-&trans  &kp HOME    &kp UP_ARROW    &kp END       &kp DELETE     &kp ESCAPE     &kp PAGE_UP   &kp KP_N4       &kp KP_N5       &kp KP_N6       &kp KP_PLUS      &kp RIGHT_PARENTHESIS
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &kp KP_NUMLOCK  &kp PAGE_DOWN  &kp KP_N1    &kp KP_N2       &kp KP_N3       &kp KP_ENTER     &kp SINGLE_QUOTE
-&trans  &kp LC(X)   &kp LC(C)       &kp LC(D)     &kp LC(V)      &kp LC(Z)      &kp COMMA     &kp KP_N0       &kp KP_N0       &kp KP_DOT      &kp KP_DIVIDE    &trans
+&trans  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_EQUAL  &kp DE_PLUS     &kp KP_N4     &kp KP_N5       &kp KP_N6       &kp KP_PLUS      &kp RIGHT_PARENTHESIS
+&trans  &kp DE_LEFT_BRACE         &kp DE_RIGHT_BRACE        &kp DE_SLASH         &kp DE_BACKSLASH      &kp DE_QUESTION  &kp DE_EXCLAMATION  &kp KP_N1  &kp KP_N2       &kp KP_N3       &kp KP_ENTER     &kp SINGLE_QUOTE
+&trans  &kp DE_LESS_THAN          &kp DE_GREATER_THAN       &kp DE_PIPE          &kp DE_APOSTROPHE     &kp DE_DOUBLE_QUOTES  &kp DE_HASH  &kp KP_N0      &kp KP_N0       &kp KP_DOT      &kp KP_DIVIDE    &trans
                                       &trans        &kp SPACE      &trans         &trans         &trans
                                                     &trans         &trans         &kp KP_ENTER
             >;
