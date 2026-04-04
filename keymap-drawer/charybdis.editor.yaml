@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: charybdis}
+layout: {zmk_keyboard: charybdis.editor}
 layers:
   BASE:
   - ESCAPE
@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - '-'
   - TAB
   - Q
   - W
@@ -23,8 +23,8 @@ layers:
   - L
   - U
   - Z
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN)))
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE)))
+  - ;
+  - '['
   - LEFT SHIFT
   - {t: A, h: LEFT CONTROL}
   - {t: R, h: LEFT ALT}
@@ -36,7 +36,7 @@ layers:
   - {t: E, h: LEFT GUI}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT CONTROL}
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - ''''
   - LEFT CONTROL
   - {t: X, h: SCROLL}
   - C
@@ -45,10 +45,10 @@ layers:
   - Y
   - K
   - H
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
-  - '&lt 3 (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND)))'
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - ','
+  - .
+  - {t: /, h: SCROLL}
+  - ']'
   - {t: LEFT GUI, h: NUM_SYM}
   - SPACE
   - {t: TAB, h: NAV_EDIT}
@@ -241,7 +241,7 @@ layers:
   - KP 9
   - KP MULTIPLY
   - KP MINUS
-  - €
+  - '='
   - (
   - )
   - '['
@@ -252,7 +252,7 @@ layers:
   - KP 5
   - KP 6
   - KP PLUS
-  - )
+  - '?'
   - '?'
   - '='
   - +
@@ -264,12 +264,12 @@ layers:
   - KP 2
   - KP 3
   - KP ENTER
-  - ''''
+  - ':'
   - '*'
   - <
   - '>'
   - '|'
-  - "'"
+  - ''''
   - '"'
   - '`'
   - KP 0
@@ -361,9 +361,16 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - SLEEP
   - LOCK
-  - SOFT OFF
+  - '&soft_off'
   - BOOT LDR
   - EP TOG
   - PREV
@@ -371,7 +378,7 @@ layers:
   - NEXT
   - VOL DN
   - VOL UP
-  - MUTE
+  - {t: MUTE, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -386,14 +393,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
