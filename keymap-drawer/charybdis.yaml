@@ -136,7 +136,7 @@ layers:
   - PAGE UP
   - HOME
   - UP ARROW
-  - Ctl+ Z
+  - END
   - {t: F10, h: EXT2}
   - {t: F11, h: EXT3}
   - {t: ▽, type: trans}
@@ -156,8 +156,8 @@ layers:
   - Ctl+ C
   - Ctl+ D
   - Ctl+ V
-  - L CLK
-  - R CLK
+  - Ctl+ Z
+  - {t: ▽, type: trans}
   - M CLK
   - MOVE L
   - MOVE R
@@ -364,7 +364,7 @@ layers:
   - PAGE UP
   - KP 4
   - KP 5
-  - Ctl+ Z
+  - KP 6
   - KP PLUS
   - )
   - {t: ▽, type: trans}
@@ -384,7 +384,7 @@ layers:
   - Ctl+ C
   - Ctl+ D
   - Ctl+ V
-  - L CLK
+  - Ctl+ Z
   - ','
   - KP 0
   - KP 0
