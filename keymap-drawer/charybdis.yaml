@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - TAB
   - Q
   - W
@@ -23,8 +23,8 @@ layers:
   - L
   - U
   - Z
-  - ;
-  - '['
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE)))
   - LEFT SHIFT
   - {t: A, h: LEFT CONTROL}
   - {t: R, h: LEFT ALT}
@@ -36,7 +36,7 @@ layers:
   - {t: E, h: LEFT GUI}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT CONTROL}
-  - ''''
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - LEFT CONTROL
   - {t: X, h: SCROLL}
   - C
@@ -45,14 +45,14 @@ layers:
   - Y
   - K
   - H
-  - ','
-  - .
-  - {t: /, h: SCROLL}
-  - ']'
-  - {t: LEFT GUI, h: EXT2}
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  - '&lt 3 (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND)))'
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - {t: LEFT GUI, h: NUM_SYM}
   - SPACE
-  - {t: TAB, h: EXT1}
-  - EXT3
+  - {t: TAB, h: NAV_EDIT}
+  - SHORTCUTS
   - BACK SPACE
   - '&mkp MB1'
   - '&mkp MB2'
@@ -114,7 +114,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXT1:
+  NAV_EDIT:
   - F1
   - F2
   - F3
@@ -137,8 +137,8 @@ layers:
   - HOME
   - UP ARROW
   - END
-  - {t: DELETE, h: EXT2}
-  - {t: INSERT, h: EXT3}
+  - {t: DELETE, h: NUM_SYM}
+  - {t: INSERT, h: SHORTCUTS}
   - {t: ▽, type: trans}
   - LEFT ALT
   - WHEEL U
@@ -150,7 +150,7 @@ layers:
   - DOWN ARROW
   - RIGHT
   - BACK SPACE
-  - {t: APP, h: EXT4}
+  - {t: APP, h: SYSTEM}
   - {t: ▽, type: trans}
   - Ctl+ X
   - Ctl+ C
@@ -342,7 +342,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXT2:
+  NUM_SYM:
   - {t: ▽, type: trans}
   - '!'
   - '@'
@@ -399,7 +399,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP ENTER
-  EXT3:
+  SHORTCUTS:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -456,7 +456,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXT4:
+  SYSTEM:
   - EP TOG
   - BOOT LDR
   - {t: ▽, type: trans}
