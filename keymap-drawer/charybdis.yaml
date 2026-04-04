@@ -52,7 +52,7 @@ layers:
   - {t: LEFT GUI, h: EXT2}
   - SPACE
   - {t: TAB, h: EXT1}
-  - SNIPER
+  - EXT3
   - BACK SPACE
   - '&mkp MB1'
   - '&mkp MB2'
@@ -136,7 +136,7 @@ layers:
   - PAGE UP
   - HOME
   - UP ARROW
-  - END
+  - Ctl+ Z
   - {t: F10, h: EXT2}
   - {t: F11, h: EXT3}
   - {t: ▽, type: trans}
@@ -152,9 +152,9 @@ layers:
   - BACK SPACE
   - {t: INSERT, h: EXT4}
   - {t: ▽, type: trans}
-  - Ctl+ Z
   - Ctl+ X
   - Ctl+ C
+  - Ctl+ D
   - Ctl+ V
   - L CLK
   - R CLK
@@ -162,7 +162,7 @@ layers:
   - MOVE L
   - MOVE R
   - Ctl+ F
-  - {t: ▽, type: trans}
+  - {t: SNIPER, h: toggle}
   - {t: ▽, type: trans}
   - ENTER
   - {type: held}

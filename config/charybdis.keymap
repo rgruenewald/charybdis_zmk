@@ -141,7 +141,7 @@
 &kp TAB           &kp Q               &kp W            &kp F            &kp P              &kp B        &kp J      &kp L               &kp U            &kp Z             &kp DE_O_UMLAUT       &kp DE_U_UMLAUT
 &kp LEFT_SHIFT    &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G        &kp M      &hmr RIGHT_SHIFT N  &hmr LEFT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O  &kp DE_A_UMLAUT
 &kp LEFT_CONTROL  &lt 3 X              &kp C            &kp D            &kp V              &kp Y        &kp K      &kp H               &kp DE_COMMA     &kp DE_DOT        &lt 3 DE_MINUS        &trans
-                                                        &lt 6 LEFT_GUI   &kp SPACE          &lt 2 TAB    &mo 4      &kp BACKSPACE
+                                                        &lt 6 LEFT_GUI   &kp SPACE          &lt 2 TAB    &mo 7      &kp BACKSPACE
                                                                          &mkp MB1           &mkp MB2     &kp ENTER
             >;
 
@@ -166,9 +166,9 @@
             label = "EXT1";
             bindings = <
 &kp F1  &kp F2        &kp F3      &kp F4            &kp F5      &kp F6       &kp F7        &kp F8          &kp F9          &kp F10          &kp F11       &kp F12
-&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 6 F10       &lt 7 F11
+&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp LC(Z)        &lt 6 F10       &lt 7 F11
 &trans  &kp LEFT_ALT  &msc MOVE_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 8 INSERT
-&trans  &kp LC(Z)     &kp LC(X)   &kp LC(C)         &kp LC(V)          &mkp LCLK    &mkp RCLK     &mkp MCLK       &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp LC(F)        &trans
+&trans  &kp LC(X)     &kp LC(C)   &kp LC(D)         &kp LC(V)          &mkp LCLK    &mkp RCLK     &mkp MCLK       &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp LC(F)        &trans
                                     &trans           &kp ENTER    &trans       &trans        &trans
                                                       &trans       &trans       &kp PRINTSCREEN
             >;
@@ -206,7 +206,7 @@
 &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI
 &trans             &trans        &trans        &trans        &trans        &trans          &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD
 &trans             &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
-                                               &trans        &trans        &trans          &trans           &trans
+                                               &trans        &trans        &trans          &tog 4           &trans
                                                              &trans        &trans          &trans
             >;
 
