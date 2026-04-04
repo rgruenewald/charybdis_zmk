@@ -162,7 +162,7 @@ layers:
   - MOVE L
   - MOVE R
   - Ctl+ F
-  - {t: SNIPER, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
   - {type: held}
@@ -280,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -337,7 +337,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: SNIPER, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -364,7 +364,7 @@ layers:
   - PAGE UP
   - KP 4
   - KP 5
-  - KP 6
+  - Ctl+ Z
   - KP PLUS
   - )
   - {t: ▽, type: trans}
@@ -380,9 +380,9 @@ layers:
   - KP ENTER
   - ''''
   - {t: ▽, type: trans}
-  - Ctl+ Z
   - Ctl+ X
   - Ctl+ C
+  - Ctl+ D
   - Ctl+ V
   - L CLK
   - ','
@@ -423,7 +423,7 @@ layers:
   - Ctl+ C
   - Ctl+ V
   - Ctl+ Y
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+ T
   - Ctl+ W
@@ -450,8 +450,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
