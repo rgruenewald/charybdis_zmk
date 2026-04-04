@@ -49,7 +49,7 @@ layers:
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - '&lt 3 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
   - {t: ▽, type: trans}
-  - {t: LEFT GUI, h: SYMNUM}
+  - {t: LEFT GUI, h: EXT2}
   - SPACE
   - {t: TAB, h: EXT1}
   - SNIPER
@@ -106,7 +106,7 @@ layers:
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -365,7 +365,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - {t: KP PLUS, type: held}
+  - KP PLUS
   - )
   - {t: ▽, type: trans}
   - LEFT
@@ -391,9 +391,9 @@ layers:
   - KP DOT
   - KP DIVIDE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SPACE
   - {type: held}
+  - SPACE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
