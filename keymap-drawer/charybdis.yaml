@@ -14,7 +14,7 @@ layers:
   - '0'
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - TAB
-  - {t: Q, h: SNIPER}
+  - Q
   - W
   - F
   - P
@@ -51,8 +51,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: LEFT GUI, h: SYMNUM}
   - SPACE
-  - {t: TAB, h: NAVSYS}
-  - SYMNUM
+  - {t: TAB, h: EXT1}
+  - SNIPER
   - BACK SPACE
   - '&mkp MB1'
   - '&mkp MB2'
@@ -114,7 +114,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NAVSYS:
+  EXT1:
   - F1
   - F2
   - F3
@@ -128,44 +128,215 @@ layers:
   - F11
   - DEV TOOLS
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ESCAPE
+  - MOVE UP
+  - C AC BACK
+  - C AC FORWARD
+  - MOVE UP
   - PAGE UP
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOL DN
-  - PREV
-  - PLAY PAUSE
-  - NEXT
-  - VOL UP
   - HOME
+  - UP ARROW
+  - END
+  - {t: F10, h: EXT2}
+  - {t: F11, h: EXT3}
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - MOVE DOWN
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - MOVE DOWN
+  - PAGE DOWN
   - LEFT
   - DOWN ARROW
   - RIGHT
-  - END
-  - INSERT
+  - BACK SPACE
+  - {t: K APP, h: EXT4}
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - L CLK
+  - R CLK
+  - M CLK
+  - MOVE LEFT
+  - MOVE RIGHT
+  - SEARCH
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PRINT SCREEN
+  EXT2:
   - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - '$'
+  - '%'
+  - ^
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MULTIPLY
+  - KP MINUS
+  - {t: ▽, type: trans}
+  - HOME
+  - UP ARROW
+  - END
+  - DELETE
+  - ESCAPE
+  - PAGE UP
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - )
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - BACK SPACE
+  - KP NUMLOCK
   - PAGE DOWN
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - "'"
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - L CLK
+  - ','
+  - KP 0
+  - KP 0
+  - KP .
+  - KP DIVIDE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP ENTER
+  EXT3:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ A
+  - Ctl+ S
+  - Ctl+ F
+  - Ctl+ R
+  - Ctl+ P
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
+  - Ctl+ Y
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ T
+  - Ctl+ W
+  - Ctl+ N
+  - Ctl+ O
+  - Ctl+ L
+  - Ctl+ U
+  - Ctl+ K
+  - Ctl+ J
+  - Ctl+ I
+  - Ctl+ H
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  EXT4:
+  - EP TOG
+  - BOOT LDR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - RGB BRI
+  - RGB HUI
+  - RGB SAI
+  - RGB EFF
+  - RGB SPI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB BRD
+  - RGB HUD
+  - RGB SAD
+  - RGB EFR
+  - RGB SPD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,9 +368,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -349,15 +520,3 @@ combos:
   k: CAPS WORD
 - p: [30, 29]
   k: {t: FNBT, h: toggle}
-- p: [28, 27]
-  k: L CLK
-- p: [27, 26]
-  k: R CLK
-- p: [27, 26, 28]
-  k: M CLK
-- p: [31, 32]
-  k: L CLK
-- p: [32, 33]
-  k: R CLK
-- p: [31, 32, 33]
-  k: M CLK
