@@ -166,8 +166,8 @@
             label = "EXT1";
             bindings = <
 &kp F1  &kp F2        &kp F3      &kp F4            &kp F5      &kp F6       &kp F7        &kp F8          &kp F9          &kp F10          &kp F11       &kp F12
-&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 6 F10       &lt 7 F11
-&trans  &kp LEFT_ALT  &msc MOVE_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 8 INSERT
+&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 6 DELETE    &lt 7 INSERT
+&trans  &kp LEFT_ALT  &msc MOVE_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 8 K_APP
 &trans  &kp LC(X)     &kp LC(C)   &kp LC(D)         &kp LC(V)          &kp LC(Z)    &trans        &mkp MCLK       &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp LC(F)        &trans
                                     &trans           &kp ENTER    &trans       &trans        &trans
                                                       &trans       &trans       &kp PRINTSCREEN

@@ -137,8 +137,8 @@ layers:
   - HOME
   - UP ARROW
   - END
-  - {t: F10, h: EXT2}
-  - {t: F11, h: EXT3}
+  - {t: DELETE, h: EXT2}
+  - {t: INSERT, h: EXT3}
   - {t: ▽, type: trans}
   - LEFT ALT
   - WHEEL U
@@ -150,7 +150,7 @@ layers:
   - DOWN ARROW
   - RIGHT
   - BACK SPACE
-  - {t: INSERT, h: EXT4}
+  - {t: APP, h: EXT4}
   - {t: ▽, type: trans}
   - Ctl+ X
   - Ctl+ C
