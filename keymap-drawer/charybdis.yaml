@@ -129,9 +129,9 @@ layers:
   - DEV TOOLS
   - {t: ▽, type: trans}
   - ESCAPE
-  - MOVE UP
-  - C AC BACK
-  - C AC FORWARD
+  - WHEEL D
+  - BACK
+  - FWD
   - MOVE UP
   - PAGE UP
   - HOME
@@ -150,7 +150,7 @@ layers:
   - DOWN ARROW
   - RIGHT
   - BACK SPACE
-  - {t: K APP, h: EXT4}
+  - {t: INSERT, h: EXT4}
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -161,7 +161,7 @@ layers:
   - M CLK
   - MOVE LEFT
   - MOVE RIGHT
-  - SEARCH
+  - Ctl+ F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER

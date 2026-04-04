@@ -166,9 +166,9 @@
             label = "EXT1";
             bindings = <
 &kp F1  &kp F2        &kp F3      &kp F4            &kp F5      &kp F6       &kp F7        &kp F8          &kp F9          &kp F10          &kp F11       &kp F12
-&trans  &kp ESCAPE    &mwh SCROLL_UP  &kp C_AC_BACK  &kp C_AC_FORWARD  &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 6 F10       &lt 7 F11
-&trans  &kp LEFT_ALT  &mwh SCROLL_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 8 K_APP
-&trans  &kp C_Z       &kp C_X     &kp C_C           &kp C_V            &mkp LCLK    &mkp RCLK     &mkp MCLK       &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp C_AC_SEARCH  &trans
+&trans  &kp ESCAPE    &msc MOVE_UP  &mkp MB4      &mkp MB5           &mmv MOVE_UP  &kp PAGE_UP   &kp HOME        &kp UP_ARROW    &kp END          &lt 6 F10       &lt 7 F11
+&trans  &kp LEFT_ALT  &msc MOVE_DOWN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mmv MOVE_DOWN  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &lt 8 INSERT
+&trans  &kp C_Z       &kp C_X     &kp C_C           &kp C_V            &mkp LCLK    &mkp RCLK     &mkp MCLK       &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp C_F          &trans
                                     &trans           &kp ENTER    &trans       &trans        &trans
                                                       &trans       &trans       &kp PRINTSCREEN
             >;
