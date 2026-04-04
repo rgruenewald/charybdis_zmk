@@ -273,7 +273,7 @@ layers:
   - '"'
   - '`'
   - KP 0
-  - KP 0
+  - ','
   - KP DOT
   - KP DIVIDE
   - ;

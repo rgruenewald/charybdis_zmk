@@ -186,7 +186,7 @@
 &kp CARET  &kp EXCL  &kp AT  &kp HASH      &kp DLLR     &kp PRCNT   &kp AMPS  &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_MULTIPLY  &kp KP_MINUS
 &kp EQUAL  &kp LPAR  &kp RPAR  &kp LBKT     &kp RBKT     &kp LBRC    &kp RBRC  &kp KP_N4       &kp KP_N5       &kp KP_N6       &kp KP_PLUS      &kp QMARK
 &kp QMARK  &kp EQUAL  &kp PLUS  &kp MINUS    &kp UNDER    &kp FSLH    &kp BSLH  &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp KP_ENTER     &kp COLON
-&kp STAR   &kp LT    &kp GT    &kp PIPE      &kp SQT      &kp DQT     &kp GRAVE &kp KP_N0       &kp KP_N0       &kp KP_DOT      &kp KP_DIVIDE    &kp SEMI
+&kp STAR   &kp LT    &kp GT    &kp PIPE      &kp SQT      &kp DQT     &kp GRAVE &kp KP_N0       &kp COMMA       &kp KP_DOT      &kp KP_DIVIDE    &kp SEMI
                                       &trans        &kp SPACE      &trans         &trans         &trans
                                                     &trans         &trans         &kp KP_ENTER
             >;
