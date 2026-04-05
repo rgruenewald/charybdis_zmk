@@ -233,12 +233,12 @@
         nav_edit_layer {
             label = "NAV_EDIT";
             bindings = <
-&mo 2      &kp F2         &kp F3     &kp F4       &kp F5              &kp F6                 &kp F7           &kp F8              &kp F9        &kp F10              &kp F11             &mo 3
-&kp LC(Y)  &kp LC(F)      &kp LC(W)  &kp LC(T)    &kp LC(LS(TAB))     &kp LC(TAB)            &kp K_APP        &kp PAGE_DOWN       &kp ENTER     &kp INSERT           &kp PAGE_UP         &trans
-&kp LC(Z)  &kp LG(LS(F))  &kp LC(C)  &kp LA(TAB)  &kp LC(V)           &kp LC(X)              &kp LEFT_ARROW   &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW      &kp BACKSPACE       &kp LC(BACKSPACE)
-&trans     &trans         &kp LC(A)  &kp TAB      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)    &kp HOME         &kp LC(LEFT_ARROW)  &kp DELETE    &kp LC(RIGHT_ARROW)  &mt LEFT_SHIFT END  &trans
-                                     &trans       &kp ESCAPE          &trans                 &trans           &trans
-                                                  &trans              &trans                 &kp PRINTSCREEN
+&mo 2      &kp F2         &kp F3     &kp F4       &kp F5              &kp F6                 &kp F7          &kp F8              &kp F9        &kp F10              &kp F11             &mo 3
+&kp LC(Z)  &kp LC(F)      &kp LC(W)  &kp LC(T)    &kp LC(LS(TAB))     &kp LC(TAB)            &kp K_APP       &kp PAGE_DOWN       &kp ENTER     &kp INSERT           &kp PAGE_UP         &trans
+&kp LC(Z)  &kp LG(LS(F))  &kp LC(C)  &kp LA(TAB)  &kp LC(V)           &kp LC(X)              &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW      &kp BACKSPACE       &kp LC(BACKSPACE)
+&trans     &trans         &kp LC(A)  &kp TAB      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)    &kp HOME        &kp LC(LEFT_ARROW)  &kp DELETE    &kp LC(RIGHT_ARROW)  &mt LEFT_SHIFT END  &trans
+                                     &trans       &trans              &trans                 &trans          &trans
+                                                  &trans              &trans                 &trans
             >;
         };
 

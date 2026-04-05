@@ -70,7 +70,7 @@ layers:
   - F10
   - F11
   - SNIPER
-  - Ctl+ Y
+  - Ctl+ Z
   - Ctl+ F
   - Ctl+ W
   - Ctl+ T
@@ -107,13 +107,13 @@ layers:
   - {t: END, h: LEFT SHIFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ESCAPE
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PRINT SCREEN
+  - {t: ▽, type: trans}
   SCROLL:
   - {type: held}
   - {t: ▽, type: trans}
