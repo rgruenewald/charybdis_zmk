@@ -28,15 +28,49 @@
 #define DE_MU (DE_MICRO)
 #endif
 
-/* ¥ on DE-DE: AltGr+Y (Y key position in DE layout) */
-#ifndef DE_YEN
-#define DE_YEN (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z)))
-#endif
+/* @ on DE-DE: AltGr+Q */
+#undef DE_AT_SIGN
+#undef DE_AT
+#define DE_AT_SIGN (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q)))
+#define DE_AT (DE_AT_SIGN)
 
-/* ß on DE-DE (US-Intl): AltGr+S */
-#ifndef DE_SHARP_S
-#define DE_SHARP_S (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S)))
-#endif
-#ifndef DE_SS
+/* ! on DE-DE: Shift+1 */
+#undef DE_EXCLAMATION
+#undef DE_EXCL
+#define DE_EXCLAMATION (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION)))
+#define DE_EXCL (DE_EXCLAMATION)
+
+/* | on DE-DE: AltGr+< */
+#undef DE_PIPE
+#define DE_PIPE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))
+
+/* { and } on DE-DE: AltGr+7 / AltGr+0 */
+#undef DE_LEFT_BRACE
+#undef DE_LBRC
+#define DE_LEFT_BRACE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND)))
+#define DE_LBRC (DE_LEFT_BRACE)
+
+#undef DE_RIGHT_BRACE
+#undef DE_RBRC
+#define DE_RIGHT_BRACE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))
+#define DE_RBRC (DE_RIGHT_BRACE)
+
+/* Diaeresis dead key on DE-DE is on the US '=' key position */
+#undef DE_UMLAUT
+#define DE_UMLAUT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS))
+
+/* ß on DE-DE is the US '-' key position */
+#undef DE_SHARP_S
+#define DE_SHARP_S (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))
+#undef DE_SS
 #define DE_SS (DE_SHARP_S)
-#endif
+
+/* £ on DE-DE commonly via AltGr+Shift+3 */
+#undef DE_POUND_SIGN
+#undef DE_POUND
+#define DE_POUND_SIGN (LS(RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_3_AND_HASH))))
+#define DE_POUND (DE_POUND_SIGN)
+
+/* ¥ on DE-DE commonly via AltGr+Y (letter key) */
+#undef DE_YEN
+#define DE_YEN (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))
