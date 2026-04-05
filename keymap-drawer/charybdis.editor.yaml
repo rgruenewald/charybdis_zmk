@@ -265,8 +265,8 @@ layers:
   - '='
   - '-'
   - '*'
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - '{'
   - '}'
@@ -276,72 +276,15 @@ layers:
   - '?'
   - +
   - _
+  - {t: ▽, type: trans}
   - ''
-  - ''
-  - SPACE
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
-  SHORTCUTS:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ Q
-  - Ctl+ K
-  - Ctl+ O
-  - Ctl+ U
-  - Ctl+ Y
-  - Ctl+ V
-  - Ctl+ D
-  - Ctl+ C
-  - Ctl+ L
-  - Ctl+ F
-  - Ctl+ J
-  - {t: ▽, type: trans}
-  - Ctl+ H
-  - Ctl+ A
-  - Ctl+ E
-  - Ctl+ I
-  - {t: ▽, type: trans}
-  - Ctl+ G
-  - Ctl+ T
-  - Ctl+ R
-  - Ctl+ N
-  - Ctl+ S
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ Z
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ X
-  - Ctl+ B
-  - Ctl+ P
-  - Ctl+ M
-  - Ctl+ W
-  - {t: ▽, type: trans}
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   SYSTEM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

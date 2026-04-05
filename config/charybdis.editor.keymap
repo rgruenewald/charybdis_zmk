@@ -74,8 +74,7 @@
     // #define SCROLL    2
     // #define SNIPER    3
     // #define NUM_SYM   4
-    // #define SHORTCUTS 5
-    // #define SYSTEM    6
+    // #define SYSTEM    5
 
     combos {
         compatible = "zmk,combos";
@@ -278,18 +277,6 @@
 &trans  &trans      &none    &kp LBRC  &kp RBRC  &none      &kp PIPE  &kp EXCL  &kp QMARK  &kp PLUS        &kp UNDER  &trans
                              &none     &trans    &none      &none     &none
                                        &none     &none      &none
-            >;
-        };
-
-        shortcuts_layer {
-            label = "SHORTCUTS";
-            bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans
-&trans  &kp LC(Q)  &kp LC(K)  &kp LC(O)  &kp LC(U)  &kp LC(Y)    &kp LC(V)  &kp LC(D)  &kp LC(C)  &kp LC(L)  &kp LC(F)  &kp LC(J)
-&trans  &kp LC(H)  &kp LC(A)  &kp LC(E)  &kp LC(I)  &trans       &kp LC(G)  &kp LC(T)  &kp LC(R)  &kp LC(N)  &kp LC(S)  &trans
-&trans  &trans     &trans     &trans     &kp LC(Z)  &trans       &trans     &kp LC(X)  &kp LC(B)  &kp LC(P)  &kp LC(M)  &kp LC(W)
-                              &trans     &kp ENTER  &trans       &trans     &trans
-                                         &trans     &trans       &trans
             >;
         };
 
