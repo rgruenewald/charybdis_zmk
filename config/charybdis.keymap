@@ -116,7 +116,7 @@
             bindings = <
 &kp ESCAPE    &kp B                 &kp L                 &kp D                 &kp W                 &kp Z                  &kp J                &kp F                 &kp O                 &kp U                 &kp P                &kp BACKSPACE
 &trans        &hm_l LEFT_GUI N      &hm_l LEFT_ALT R      &hm_l LEFT_SHIFT T    &hm_l LEFT_CONTROL S  &kp G                  &kp Y                &hm_r RIGHT_CONTROL H &hm_r RIGHT_SHIFT A   &hm_r RIGHT_ALT E     &hm_r RIGHT_GUI I    &trans
-&trans        &kp Q                 &kp X                 &kp M                 &kp C                 &kp V                  &kp K                &kp DE_COMMA          &kp DE_DOT            &kp DE_SLASH          &kp DE_MINUS         &trans
+&trans        &kp Q                 &kp X                 &kp M                 &kp C                 &kp V                  &kp K                &kp DE_COMMA          &kp DE_DOT            &kp DE_SLASH          &kp DE_SEMICOLON     &trans
 &trans        &trans                &trans                &trans                &trans                &trans                 &trans               &trans                &trans                &trans                &trans               &trans
                                           &kp ESCAPE            &sl NAV               &kp SPACE              &sl SYM                &kp BACKSPACE
                                                                  &sl NUM              &sl MEDIA              &kp ENTER
