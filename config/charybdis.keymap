@@ -291,7 +291,7 @@
 &kp DE_N1          &kp DE_N2         &sym_l3          &sym_l4             &sym_l5             &sym_l6            &sym_r1            &sym_r2              &sym_r3                   &sym_r4                   &sym_r5              &sym_r6
 &none              &caps_word        &kp DE_AT_SIGN   &kp DE_O_UMLAUT     &kp DE_MU           &kp DE_O           &kp DE_BACKSLASH   &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET      &kp DE_ACUTE              &kp DE_GRAVE         &kp DE_C_CEDILLA
 &none              &de_edia          &de_idia         &kp DE_A_UMLAUT     &kp DE_U_UMLAUT     &kp DE_SHARP_S     &kp DE_SLASH       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL          &kp DE_MINUS         &kp DE_ASTERISK
-&ish LEFT_SHIFT LEFT_SHIFT  &ish LEFT_SHIFT LEFT_SHIFT  &none            &kp DE_LEFT_BRACE   &kp DE_RIGHT_BRACE  &none              &kp DE_PIPE        &kp DE_EXCLAMATION   &kp DE_QUESTION           &kp DE_PLUS               &kp DE_UNDERSCORE    &ish LEFT_SHIFT LEFT_SHIFT
+&trans                      &trans                      &none            &kp DE_LEFT_BRACE   &kp DE_RIGHT_BRACE  &none              &kp DE_PIPE        &kp DE_EXCLAMATION   &kp DE_QUESTION           &kp DE_PLUS               &kp DE_UNDERSCORE    &trans
                                       &none            &kp SPACE           &none               &none               &none
                                                     &none               &none               &none
             >;
