@@ -52,11 +52,11 @@ layers:
   - {t: ESCAPE, h: MEDIA}
   - {t: SPACE, h: NAV}
   - {t: TAB, h: MOUSE}
-  - {t: BACK SPACE, h: NUM}
-  - {t: ENTER, h: SYM}
+  - {t: DELETE, h: NUM}
+  - {t: BACK SPACE, h: SYM}
   - L CLK
   - R CLK
-  - DELETE
+  - {t: ENTER, h: FUN}
   NAV:
   - ''
   - ''
@@ -399,6 +399,63 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  FUN:
+  - DEV TOOLS
+  - F7
+  - F8
+  - F9
+  - PRINT SCREEN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SCROLLLOCK
+  - ''
+  - ''
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [14, 15]
   k: A
