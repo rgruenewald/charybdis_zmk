@@ -171,9 +171,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &none           &none             &none            &none             &none          &kp LC(Y)        &kp LC(V)         &kp LC(C)       &kp LC(X)      &none        &kp LC(Z)
+&none   &none           &none             &none            &none             &none          &none            &none             &none           &none          &none        &none
 &none   &kp LEFT_GUI    &kp LEFT_ALT      &kp LEFT_CONTROL &kp LEFT_SHIFT    &none          &none            &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP   &none        &mmv MOVE_RIGHT
-&none   &none           &none             &none            &none             &none          &none            &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &tog SCROLL  &msc SCRL_RIGHT
+&none   &none           &none             &none            &none             &none          &tog SCROLL      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &none        &msc SCRL_RIGHT
+&none   &none           &none             &none            &none             &none          &kp LC(Y)        &kp LC(V)         &kp LC(C)       &kp LC(X)      &none        &kp LC(Z)
 &none   &none           &none             &none            &none             &none          &none            &none             &none           &none          &none        &none
                                &trans      &trans      &trans            &mkp RCLK         &mkp LCLK
                                            &trans      &trans            &mkp MCLK
@@ -183,9 +184,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&none   &none           &none             &none            &none             &none          &kp LC(Y)        &kp LC(V)         &kp LC(C)       &kp LC(X)      &none        &kp LC(Z)
+&none   &none           &none             &none            &none             &none          &none            &none             &none           &none          &none        &none
 &none   &kp LEFT_GUI    &kp LEFT_ALT      &kp LEFT_CONTROL &kp LEFT_SHIFT    &none          &none            &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP   &none        &mmv MOVE_RIGHT
-&none   &none           &none             &none            &none             &none          &none            &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &tog SCROLL  &msc SCRL_RIGHT
+&none   &none           &none             &none            &none             &none          &tog SCROLL      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &none        &msc SCRL_RIGHT
+&none   &none           &none             &none            &none             &none          &kp LC(Y)        &kp LC(V)         &kp LC(C)       &kp LC(X)      &none        &kp LC(Z)
 &none   &none        &none        &none        &none        &none         &none             &none             &none             &none             &none  &none
                                &trans      &trans      &trans            &mkp RCLK         &mkp LCLK
                                            &trans      &trans            &mkp MCLK
