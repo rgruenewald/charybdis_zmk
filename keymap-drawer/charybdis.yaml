@@ -369,6 +369,18 @@ layers:
   - LEFT CONTROL
   - LEFT SHIFT
   - ''
+  - Ctl+ Z
+  - Ctl+ V
+  - Ctl+ C
+  - Ctl+ X
+  - ''
+  - Ctl+ Y
+  - {t: SCROLL, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - MOVE L
   - MOVE D
@@ -387,18 +399,6 @@ layers:
   - '&msc SCRL_UP'
   - ''
   - '&msc SCRL_RIGHT'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Ctl+ Z
-  - Ctl+ V
-  - Ctl+ C
-  - Ctl+ X
-  - ''
-  - Ctl+ Y
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
