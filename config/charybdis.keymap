@@ -249,7 +249,7 @@
         nav_edit_layer {
             label = "NAV_EDIT";
             bindings = <
-&kp F1  &kp F2        &kp F3      &kp F4            &kp F5      &kp F6       &kp F7        &kp F8          &kp F9          &kp F10          &kp F11       &kp F12
+&mo 2   &kp F2        &kp F3      &kp F4            &kp F5      &kp F6       &kp F7        &kp F8          &kp F9          &kp F10          &kp F11       &mo 3
 &kp LC(Y)  &kp LC(F)  &kp LC(W)    &kp LC(T)        &kp LC(LS(TAB))   &kp LC(TAB)        &kp K_APP     &kp PAGE_DOWN    &kp ENTER       &kp INSERT       &kp PAGE_UP     &trans
 &kp LC(Z)  &kp LG(LS(F))  &kp LC(C)  &kp LA(TAB)    &kp LC(V)         &kp LC(X)          &kp LEFT_ARROW &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp BACKSPACE   &kp LC(BACKSPACE)
 &trans     &trans      &kp LC(A)    &kp TAB         &kp LA(LEFT_ARROW) &kp LA(RIGHT_ARROW) &kp HOME      &kp LC(LEFT_ARROW) &kp DELETE   &kp LC(RIGHT_ARROW) &mt LEFT_SHIFT END &trans
@@ -290,7 +290,7 @@
 &kp DE_N1          &kp DE_N2         &sym_l3          &sym_l4             &sym_l5             &sym_l6            &sym_r1            &sym_r2              &sym_r3                   &sym_r4                   &sym_r5              &sym_r6
 &none              &caps_word        &kp DE_AT_SIGN   &kp DE_O_UMLAUT     &kp DE_MU           &kp DE_O           &kp DE_BACKSLASH   &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET      &kp DE_ACUTE              &kp DE_GRAVE         &kp DE_C_CEDILLA
 &none              &de_edia          &de_idia         &kp DE_A_UMLAUT     &kp DE_U_UMLAUT     &kp DE_SHARP_S     &kp DE_SLASH       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL          &kp DE_MINUS         &kp DE_ASTERISK
-&trans                      &trans                      &none            &kp DE_LEFT_BRACE   &kp DE_RIGHT_BRACE  &none              &kp DE_PIPE        &kp DE_EXCLAMATION   &kp DE_QUESTION           &kp DE_PLUS               &kp DE_UNDERSCORE    &trans
+&trans                      &trans                      &none            &kp DE_LEFT_BRACE   &kp DE_RIGHT_BRACE  &none              &kp DE_PIPE        &kp DE_EXCLAMATION   &kp DE_QUESTION           &kp DE_PLUS               &kp DE_UNDERSCORE    &sl 5
                                       &none            &kp SPACE           &none               &none               &none
                                                     &none               &none               &none
             >;
