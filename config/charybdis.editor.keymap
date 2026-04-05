@@ -327,12 +327,12 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&none  &none         &none         &none             &none           &none     &none        &none           &none           &none         &none  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &none  &mmv MOVE_RIGHT
-&tog SCROLL  &none   &none         &none             &none           &none     &tog SCROLL  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &none  &msc SCRL_RIGHT
-&none  &none         &none         &none             &none           &none     &kp LC(Y)    &kp LC(V)       &kp LC(C)       &kp LC(X)     &none  &kp LC(Z)
-                                   &trans            &trans          &trans    &mkp RCLK    &mkp LCLK
-                                                     &trans          &trans    &mkp MCLK
+&none        &none         &none         &none      &none           &none     &none        &none           &none           &none         &none            &none
+&none        &none         &none         &none      &none           &none     &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&tog SCROLL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none     &tog SCROLL  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&none        &none         &none         &none      &none           &none     &kp LC(Y)    &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
+                                         &trans     &trans          &trans    &mkp MCLK    &mkp RCLK
+                                                    &trans          &trans    &mkp LCLK
             >;
         };
 

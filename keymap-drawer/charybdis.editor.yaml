@@ -356,29 +356,29 @@ layers:
   - ''
   - ''
   - ''
-  - LEFT GUI
-  - LEFT ALT
-  - LEFT CONTROL
-  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - MOVE L
   - MOVE D
   - MOVE UP
-  - ''
   - MOVE R
+  - ''
   - {t: SCROLL, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
+  - LEFT WIN
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
   - ''
   - {t: SCROLL, h: toggle}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
-  - ''
   - '&msc SCRL_RIGHT'
+  - ''
   - ''
   - ''
   - ''
@@ -389,16 +389,16 @@ layers:
   - Ctl+ V
   - Ctl+ C
   - Ctl+ X
-  - ''
   - Ctl+ Z
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - R CLK
-  - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - M CLK
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
   FUN:
   - ''
   - ''
