@@ -195,12 +195,12 @@
         fun_layer {
             label = "FUN";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN  &none     &none   &none           &none             &none         &none         &none
-&kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK   &none     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK  &none     &none   &none           &none             &none         &none         &none
-&none    &none   &none   &none   &none            &none     &none   &none           &none             &none         &none         &none
-                         &trans  &trans           &trans    &trans  &trans
-                                 &trans           &trans    &trans
+&none    &none    &none   &none   &none            &none            &none  &none           &none             &none         &none         &none
+&none    &kp F12  &kp F7  &kp F8  &kp F9           &kp PRINTSCREEN  &none  &none           &none             &none         &none         &none
+&none    &kp F11  &kp F4  &kp F5  &kp F6           &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none    &kp F10  &kp F1  &kp F2  &kp F3           &kp PAUSE_BREAK  &none  &none           &none             &none         &none         &none
+                         &trans  &trans           &trans            &trans  &trans
+                                 &trans           &trans            &trans
             >;
         };
     };
