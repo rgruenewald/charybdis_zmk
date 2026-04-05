@@ -13,46 +13,46 @@ layers:
   - '9'
   - '0'
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
-  - TAB
+  - ESCAPE
   - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Z
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN)))
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE)))
-  - LEFT SHIFT
-  - {t: A, h: LEFT CONTROL}
-  - {t: R, h: LEFT ALT}
-  - {t: S, h: LEFT GUI}
-  - {t: T, h: LEFT SHIFT}
-  - G
-  - M
-  - {t: N, h: RIGHT SHIFT}
-  - {t: E, h: LEFT GUI}
-  - {t: I, h: RIGHT ALT}
-  - {t: O, h: RIGHT CONTROL}
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
-  - LEFT CONTROL
-  - {t: X, h: SCROLL}
-  - C
-  - D
-  - V
-  - Y
   - K
+  - O
+  - U
+  - Y
+  - V
+  - D
+  - C
+  - L
+  - F
+  - J
+  - {t: SYMBOL, h: sticky}
   - H
+  - A
+  - E
+  - I
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
-  - '&lt 2 (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND)))'
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
-  - {t: LEFT GUI, h: NUM_SYM}
-  - SPACE
-  - {t: TAB, h: NAV_EDIT}
-  - SHORTCUTS
+  - G
+  - T
+  - R
+  - N
+  - S
+  - {t: SYMBOL, h: sticky}
+  - {t: LEFT SHIFT, h: sticky}
+  - {t: LEFT SHIFT, h: sticky}
+  - {t: Z, h: LEFT GUI}
+  - '&mt LEFT_ALT ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
+  - '&mt LEFT_CONTROL ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
+  - X
+  - ''
+  - B
+  - {t: P, h: RIGHT CONTROL}
+  - {t: M, h: RIGHT ALT}
+  - {t: W, h: RIGHT GUI}
+  - {t: LEFT SHIFT, h: sticky}
+  - LEFT CONTROL
+  - LEFT ALT
+  - {t: SPACE, h: NAV_EDIT}
+  - RIGHT ALT
   - BACK SPACE
   - '&mkp MB1'
   - '&mkp MB2'
@@ -70,44 +70,44 @@ layers:
   - F10
   - F11
   - DEV TOOLS
-  - {t: ▽, type: trans}
-  - ESCAPE
-  - WHEEL D
-  - BACK
-  - FWD
-  - MOVE UP
-  - PAGE UP
-  - HOME
-  - UP ARROW
-  - END
-  - {t: DELETE, h: NUM_SYM}
-  - {t: INSERT, h: SHORTCUTS}
-  - {t: ▽, type: trans}
-  - LEFT ALT
-  - WHEEL U
-  - LEFT SHIFT
-  - LEFT CONTROL
-  - MOVE D
+  - Ctl+ Y
+  - Ctl+ F
+  - Ctl+ W
+  - Ctl+ T
+  - Ctl+Sft+ TAB
+  - Ctl+ TAB
+  - APP
   - PAGE DOWN
+  - ENTER
+  - INSERT
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - Ctl+ Z
+  - Gui+Sft+ F
+  - Ctl+ C
+  - Alt+ TAB
+  - Ctl+ V
+  - Ctl+ X
   - LEFT
   - DOWN ARROW
+  - UP ARROW
   - RIGHT
   - BACK SPACE
-  - {t: APP, h: SYSTEM}
-  - {t: ▽, type: trans}
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ D
-  - Ctl+ V
-  - Ctl+ Z
-  - {t: ▽, type: trans}
-  - M CLK
-  - MOVE L
-  - MOVE R
-  - Ctl+ F
+  - Ctl+ BACK SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
+  - Ctl+ A
+  - TAB
+  - Alt+ LEFT
+  - Alt+ RIGHT
+  - HOME
+  - Ctl+ LEFT
+  - DELETE
+  - Ctl+ RIGHT
+  - {t: END, h: LEFT SHIFT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESCAPE
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,7 +152,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -228,7 +228,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NUM_SYM:
+  SYMBOL:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT)))
@@ -236,11 +236,11 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET)))
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MULTIPLY
-  - KP MINUS
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD E)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
@@ -248,22 +248,22 @@ layers:
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE)))
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
+  - {t: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))', type: held}
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION)))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP ENTER
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH)))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))
@@ -272,12 +272,12 @@ layers:
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS)))
-  - KP 0
-  - ','
-  - KP DOT
-  - KP DIVIDE
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT)))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN)))
-  - {type: held}
+  - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,44 +300,44 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+ Q
-  - Ctl+ W
-  - Ctl+ F
-  - Ctl+ P
-  - Ctl+ B
-  - Ctl+ J
-  - Ctl+ L
+  - Ctl+ K
+  - Ctl+ O
   - Ctl+ U
+  - Ctl+ Y
+  - Ctl+ V
+  - Ctl+ D
+  - Ctl+ C
+  - Ctl+ L
+  - Ctl+ F
+  - Ctl+ J
+  - {t: ▽, type: trans}
+  - Ctl+ H
+  - Ctl+ A
+  - Ctl+ E
+  - Ctl+ I
+  - {t: ▽, type: trans}
+  - Ctl+ G
+  - Ctl+ T
+  - Ctl+ R
+  - Ctl+ N
+  - Ctl+ S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctl+ Z
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ A
-  - Ctl+ R
-  - Ctl+ S
-  - Ctl+ T
-  - Ctl+ G
-  - Ctl+ M
-  - Ctl+ N
-  - Ctl+ E
-  - Ctl+ I
-  - Ctl+ O
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Ctl+ X
-  - Ctl+ C
-  - Ctl+ D
-  - Ctl+ V
-  - Ctl+ Y
-  - Ctl+ K
-  - Ctl+ H
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ B
+  - Ctl+ P
+  - Ctl+ M
+  - Ctl+ W
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -378,7 +378,7 @@ layers:
   - NEXT
   - VOL DN
   - VOL UP
-  - {t: MUTE, type: held}
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -393,7 +393,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
