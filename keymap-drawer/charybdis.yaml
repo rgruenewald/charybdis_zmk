@@ -49,9 +49,9 @@ layers:
   - W
   - RIGHT SHIFT
   - ''
-  - {t: ESCAPE, h: MEDIA}
+  - {t: ESCAPE, h: MOUSE}
   - {t: SPACE, h: NAV}
-  - {t: TAB, h: MOUSE}
+  - {t: TAB, h: MEDIA}
   - {t: DELETE, h: NUM}
   - {t: BACK SPACE, h: SYM}
   - L CLK
@@ -163,9 +163,9 @@ layers:
   - ''
   - ''
   - ''
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -226,11 +226,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))', s: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH
-      AND PIPE)))'}
-  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))', s: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))'}
   - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))', s: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION
       MARK)))'}
+  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))', s: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))'}
+  - {t: '((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))', s: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH
+      AND PIPE)))'}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -285,9 +285,9 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -342,9 +342,9 @@ layers:
   - '&msc SCRL_UP'
   - ''
   - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - R CLK
   - L CLK
   - {t: ▽, type: trans}
@@ -456,9 +456,9 @@ layers:
   - ''
   - ''
   - ''
-  - APP
-  - SPACE
   - TAB
+  - SPACE
+  - APP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
