@@ -330,7 +330,7 @@ layers:
   - MOVE UP
   - ''
   - MOVE R
-  - ''
+  - {t: SCROLL, h: toggle}
   - ''
   - ''
   - ''
