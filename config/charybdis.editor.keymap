@@ -100,24 +100,149 @@
             hold-trigger-on-release;
         };
 
-        n7s: n7s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>, <&kp AMPS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n8s: n8s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>, <&kp STAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n9s: n9s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N9>, <&kp LPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n4s: n4s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N4>, <&kp DLLR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n5s: n5s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N5>, <&kp PRCNT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n6s: n6s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N6>, <&kp CARET>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n1s: n1s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N1>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n2s: n2s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N2>, <&kp AT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n3s: n3s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N3>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n0s: n0s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N0>, <&kp RPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nds: nds { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp GT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nms: nms { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp UNDER>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nlb: nlb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LBKT>, <&kp LBRC>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nsc: nsc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SEMI>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        ngr: ngr { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp GRAVE>, <&kp TILDE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nrb: nrb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp RBKT>, <&kp RBRC>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        neq: neq { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp PLUS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nbs: nbs { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp BSLH>, <&kp PIPE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n7s: n7s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp AMPS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n8s: n8s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp STAR>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n9s: n9s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp LPAR>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n4s: n4s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp DLLR>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n5s: n5s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp PRCNT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n6s: n6s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp CARET>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n1s: n1s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp EXCL>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n2s: n2s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp AT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n3s: n3s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3>, <&kp HASH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n0s: n0s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp RPAR>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nds: nds {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp GT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nms: nms {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nlb: nlb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nsc: nsc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp COLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ngr: ngr {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nrb: nrb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        neq: neq {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbs: nbs {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>, <&kp PIPE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -154,24 +279,24 @@
         sym_layer {
             label = "SYM";
             bindings = <
-&none  &none      &none     &none      &none      &none      &none  &none          &none            &none        &none       &none
-&none  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &none  &none          &none            &none        &none       &none
-&none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none  &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
-&none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none  &none          &none            &none        &none       &none
-                           &kp LPAR    &kp RPAR    &kp UNDER   &trans &trans
-                                      &trans      &trans      &trans
+&none  &none      &none     &none      &none      &none        &none   &none           &none             &none         &none         &none
+&none  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC     &none   &none           &none             &none         &none         &none
+&none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none   &none           &none             &none         &none         &none
+                            &kp LPAR   &kp RPAR   &kp UNDER    &trans  &trans
+                                       &trans     &trans       &trans
             >;
         };
 
         num_layer {
             label = "NUM";
             bindings = <
-&none  &none      &none      &none      &none      &none       &none  &none          &none            &none        &none       &none
-&none  &nlb       &n7s       &n8s       &n9s       &nrb        &none  &none          &none            &none        &none       &none
-&none  &nsc       &n4s       &n5s       &n6s       &neq        &none  &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
-&none  &ngr       &n1s       &n2s       &n3s       &nbs        &none  &none          &none            &none        &none       &none
-                               &nds      &n0s       &nms        &trans &trans
-                                         &trans      &trans      &trans
+&none  &none  &none  &none  &none   &none     &none   &none           &none             &none         &none         &none
+&none  &nlb   &n7s   &n8s   &n9s    &nrb      &none   &none           &none             &none         &none         &none
+&none  &nsc   &n4s   &n5s   &n6s    &neq      &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none  &ngr   &n1s   &n2s   &n3s    &nbs      &none   &none           &none             &none         &none         &none
+                     &nds   &n0s    &nms      &trans  &trans
+                            &trans  &trans    &trans
             >;
         };
 
@@ -190,23 +315,23 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none  &none         &none         &none             &none           &none    &none      &none           &none           &none         &none            &none
-&none  &none         &none         &none             &none           &none    &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &none         &none         &none             &none           &none    &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                                   &trans            &trans          &trans   &mkp RCLK  &mkp LCLK
-                                                    &trans          &trans   &mkp MCLK
+&none  &none         &none         &none             &none           &none     &none      &none           &none           &none         &none            &none
+&none  &none         &none         &none             &none           &none     &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none         &none         &none             &none           &none     &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                                   &trans            &trans          &trans    &mkp MCLK  &mkp RCLK
+                                                     &trans          &trans    &mkp LCLK
             >;
         };
 
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&none  &none         &none         &none             &none           &none    &none        &none           &none           &none         &none  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &none  &mmv MOVE_RIGHT
-&none  &none         &none         &none             &none           &none    &tog SCROLL  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &none  &msc SCRL_RIGHT
-&none  &none         &none         &none             &none           &none    &kp LC(Y)    &kp LC(V)       &kp LC(C)       &kp LC(X)     &none  &kp LC(Z)
-                                   &trans            &trans          &trans   &mkp RCLK    &mkp LCLK
+&none  &none         &none         &none             &none           &none     &none        &none           &none           &none         &none  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &none  &mmv MOVE_RIGHT
+&none  &none         &none         &none             &none           &none     &tog SCROLL  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &none  &msc SCRL_RIGHT
+&none  &none         &none         &none             &none           &none     &kp LC(Y)    &kp LC(V)       &kp LC(C)       &kp LC(X)     &none  &kp LC(Z)
+                                   &trans            &trans          &trans    &mkp RCLK    &mkp LCLK
                                                      &trans          &trans    &mkp MCLK
             >;
         };
@@ -214,12 +339,12 @@
         fun_layer {
             label = "FUN";
             bindings = <
-&none    &none    &none   &none   &none            &none            &none  &none           &none             &none         &none         &none
-&none    &kp F12  &kp F7  &kp F8  &kp F9           &kp PRINTSCREEN  &none  &none           &none             &none         &none         &none
-&none    &kp F11  &kp F4  &kp F5  &kp F6           &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&none    &kp F10  &kp F1  &kp F2  &kp F3           &kp PAUSE_BREAK  &none  &none           &none             &none         &none         &none
-                         &kp K_APP  &kp SPACE      &kp TAB           &trans  &trans
-                                 &trans           &trans            &trans
+&none  &none    &none   &none      &none      &none              &none   &none           &none             &none         &none         &none
+&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN    &none   &none           &none             &none         &none         &none
+&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none   &none           &none             &none         &none         &none
+                        &kp K_APP  &kp SPACE  &kp TAB            &trans  &trans
+                                   &trans     &trans             &trans
             >;
         };
     };
