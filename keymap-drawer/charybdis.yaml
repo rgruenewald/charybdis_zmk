@@ -1,6 +1,18 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))
   - ESCAPE
   - Q
   - K
@@ -12,7 +24,7 @@ layers:
   - C
   - L
   - F
-  - BACK SPACE
+  - J
   - ''
   - H
   - {t: A, h: LEFT GUI}
@@ -25,7 +37,8 @@ layers:
   - {t: N, h: RIGHT SHIFT}
   - {t: S, h: RIGHT CONTROL}
   - ''
-  - ''
+  - AC REFRESH
+  - LEFT SHIFT
   - Z
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
@@ -34,29 +47,16 @@ layers:
   - P
   - M
   - W
-  - J
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
+  - RIGHT SHIFT
   - ''
-  - AC REFRESH
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ESCAPE, h: NAV}
-  - {t: SPACE, h: NUM}
+  - {t: ESCAPE, h: MEDIA}
+  - {t: SPACE, h: NAV}
   - {t: TAB, h: MOUSE}
-  - {t: SYM, h: sticky}
-  - {t: BACK SPACE, h: MEDIA}
-  - ''
-  - {t: BASE, h: toggle}
-  - ENTER
+  - {t: BACK SPACE, h: NUM}
+  - {t: ENTER, h: SYM}
+  - L CLK
+  - R CLK
+  - DELETE
   NAV:
   - ''
   - ''
@@ -106,8 +106,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -128,10 +128,10 @@ layers:
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
   - ''
   - ''
-  - {t: LEFT GUI, h: sticky}
-  - {t: LEFT ALT, h: sticky}
-  - {t: LEFT SHIFT, h: sticky}
-  - {t: LEFT CONTROL, h: sticky}
+  - ''
+  - ''
+  - ''
+  - ''
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS)))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
@@ -166,8 +166,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,9 +221,9 @@ layers:
   - KP MINUS
   - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 1
   - KP 2
@@ -277,11 +277,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

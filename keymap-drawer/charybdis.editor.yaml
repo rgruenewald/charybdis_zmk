@@ -1,6 +1,18 @@
 layout: {zmk_keyboard: charybdis.editor}
 layers:
   BASE:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - +
   - ESCAPE
   - Q
   - K
@@ -12,7 +24,7 @@ layers:
   - C
   - L
   - F
-  - BACK SPACE
+  - J
   - ''
   - H
   - {t: A, h: LEFT GUI}
@@ -25,7 +37,8 @@ layers:
   - {t: N, h: RIGHT SHIFT}
   - {t: S, h: RIGHT CONTROL}
   - ''
-  - ''
+  - AC REFRESH
+  - LEFT SHIFT
   - Z
   - ''''
   - .
@@ -34,29 +47,16 @@ layers:
   - P
   - M
   - W
-  - J
-  - '-'
+  - RIGHT SHIFT
   - ''
-  - AC REFRESH
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ESCAPE, h: NAV}
-  - {t: SPACE, h: NUM}
+  - {t: ESCAPE, h: MEDIA}
+  - {t: SPACE, h: NAV}
   - {t: TAB, h: MOUSE}
-  - {t: SYM, h: sticky}
-  - {t: BACK SPACE, h: MEDIA}
-  - ''
-  - {t: BASE, h: toggle}
-  - ENTER
+  - {t: BACK SPACE, h: NUM}
+  - {t: ENTER, h: SYM}
+  - L CLK
+  - R CLK
+  - DELETE
   NAV:
   - ''
   - ''
@@ -106,8 +106,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -128,10 +128,10 @@ layers:
   - )
   - ''
   - ''
-  - {t: LEFT GUI, h: sticky}
-  - {t: LEFT ALT, h: sticky}
-  - {t: LEFT SHIFT, h: sticky}
-  - {t: LEFT CONTROL, h: sticky}
+  - ''
+  - ''
+  - ''
+  - ''
   - '{'
   - '}'
   - '['
@@ -166,8 +166,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,9 +221,9 @@ layers:
   - KP MINUS
   - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 1
   - KP 2
@@ -277,11 +277,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

@@ -14,7 +14,6 @@
 #define MEDIA   4
 #define MOUSE   5
 #define SCROLL  6
-#define FUN     7
 
 / {
     trackball_listener {
@@ -112,8 +111,8 @@
 &kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp Y                   &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
 &none            &kp H             &hm_l LEFT_GUI A       &hm_l LEFT_ALT E       &hm_l LEFT_SHIFT I     &hm_l LEFT_CONTROL DE_COMMA   &kp G                 &hm_r RIGHT_GUI T      &hm_r RIGHT_ALT R      &hm_r RIGHT_SHIFT N    &hm_r RIGHT_CONTROL S        &none
 &kp C_AC_REFRESH &kp LEFT_SHIFT    &kp Z                  &kp DE_APOSTROPHE      &kp DE_DOT             &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &none
-                                         &lt MEDIA ESCAPE   &lt NAV SPACE         &lt MOUSE TAB           &mkp LCLK              &mkp RCLK
-                                                              &lt SYM ENTER           &lt NUM BACKSPACE        &lt FUN DELETE
+                                         &lt MEDIA ESCAPE   &lt NAV SPACE         &lt MOUSE TAB           &lt NUM BACKSPACE        &lt SYM ENTER
+                                                              &mkp LCLK             &mkp RCLK              &kp DELETE
             >;
 
             sensor-bindings =
@@ -193,16 +192,5 @@
             >;
         };
 
-        fun_layer {
-            label = "FUN";
-            bindings = <
-&kp F1       &kp F2        &kp F3         &kp F4          &kp F5          &kp F6             &none         &none        &none        &none        &none        &none
-&kp F7       &kp F8        &kp F9         &kp F10         &kp F11         &kp F12            &none         &none        &none        &none        &none        &none
-&bootloader  &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3       &none         &none        &none        &none        &none        &none
-&soft_off    &ext_power EP_TOG  &none      &none           &none           &none              &none         &none        &none        &none        &none        &none
-                                 &trans     &trans          &trans          &trans             &trans
-                                             &trans          &trans          &trans
-            >;
-        };
     };
 };
