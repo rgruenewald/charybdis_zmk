@@ -112,6 +112,12 @@
         n0s: n0s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N0>, <&kp RPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         nds: nds { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp GT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         nms: nms { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp UNDER>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nlb: nlb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LBKT>, <&kp LBRC>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nsc: nsc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SEMI>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        ngr: ngr { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp GRAVE>, <&kp TILDE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nrb: nrb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp RBKT>, <&kp RBRC>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        neq: neq { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp PLUS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nbs: nbs { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp BSLH>, <&kp PIPE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     keymap {
@@ -161,9 +167,9 @@
             label = "NUM";
             bindings = <
 &none  &none      &none      &none      &none      &none       &none  &none          &none            &none        &none       &none
-&none  &kp LBKT   &n7s       &n8s       &n9s       &kp RBKT    &none  &none          &none            &none        &none       &none
-&none  &kp SEMI   &n4s       &n5s       &n6s       &kp EQUAL   &none  &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
-&none  &kp GRAVE  &n1s       &n2s       &n3s       &kp BSLH    &none  &none          &none            &none        &none       &none
+&none  &nlb       &n7s       &n8s       &n9s       &nrb        &none  &none          &none            &none        &none       &none
+&none  &nsc       &n4s       &n5s       &n6s       &neq        &none  &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
+&none  &ngr       &n1s       &n2s       &n3s       &nbs        &none  &none          &none            &none        &none       &none
                                &nds      &n0s       &nms        &trans &trans
                                          &trans      &trans      &trans
             >;
