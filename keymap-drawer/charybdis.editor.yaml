@@ -337,11 +337,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - R CLK
-  - L CLK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - M CLK
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
   SCROLL:
   - ''
   - ''

@@ -25,7 +25,7 @@ layers:
   - L
   - F
   - J
-  - ''
+  - {t: SCROLL, h: toggle}
   - H
   - {t: A, h: LEFT GUI}
   - {t: E, h: LEFT ALT}
