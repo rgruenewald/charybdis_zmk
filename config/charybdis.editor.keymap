@@ -99,6 +99,19 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 53>;
             hold-trigger-on-release;
         };
+
+        n7s: n7s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>, <&kp AMPS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n8s: n8s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>, <&kp STAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n9s: n9s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N9>, <&kp LPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n4s: n4s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N4>, <&kp DLLR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n5s: n5s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N5>, <&kp PRCNT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n6s: n6s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N6>, <&kp CARET>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n1s: n1s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N1>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n2s: n2s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N2>, <&kp AT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n3s: n3s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N3>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n0s: n0s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N0>, <&kp RPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nds: nds { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp GT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nms: nms { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp UNDER>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     keymap {
@@ -148,10 +161,10 @@
             label = "NUM";
             bindings = <
 &none  &none      &none      &none      &none      &none       &none  &none          &none            &none        &none       &none
-&none  &kp LBKT   &kp N7     &kp N8     &kp N9     &kp RBKT    &none  &none          &none            &none        &none       &none
-&none  &kp SEMI   &kp N4     &kp N5     &kp N6     &kp EQUAL   &none  &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &kp RIGHT_SHIFT
-&none  &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp BSLH    &none  &none          &none            &none        &none       &none
-                               &kp DOT   &kp N0     &kp MINUS   &trans &trans
+&none  &kp LBKT   &n7s       &n8s       &n9s       &kp RBKT    &none  &none          &none            &none        &none       &none
+&none  &kp SEMI   &n4s       &n5s       &n6s       &kp EQUAL   &none  &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
+&none  &kp GRAVE  &n1s       &n2s       &n3s       &kp BSLH    &none  &none          &none            &none        &none       &none
+                               &nds      &n0s       &nms        &trans &trans
                                          &trans      &trans      &trans
             >;
         };
@@ -199,7 +212,7 @@
 &none    &kp F12  &kp F7  &kp F8  &kp F9           &kp PRINTSCREEN  &none  &none           &none             &none         &none         &none
 &none    &kp F11  &kp F4  &kp F5  &kp F6           &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
 &none    &kp F10  &kp F1  &kp F2  &kp F3           &kp PAUSE_BREAK  &none  &none           &none             &none         &none         &none
-                         &trans  &trans           &trans            &trans  &trans
+                         &kp K_APP  &kp SPACE      &kp TAB           &trans  &trans
                                  &trans           &trans            &trans
             >;
         };
