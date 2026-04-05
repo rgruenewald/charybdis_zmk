@@ -106,13 +106,12 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp N1      &kp N2               &kp N3               &kp N4                 &kp N5                &kp N6              &kp N7              &kp N8                &kp N9                  &kp N0                   &kp MINUS                     &kp PLUS
-&kp ESCAPE  &kp Q                &kp K                &kp O                  &kp U                 &kp Y               &kp V               &kp D                 &kp C                   &kp L                    &kp F                         &kp J
-&none       &kp H                &hm_l LEFT_GUI A     &hm_l LEFT_ALT E       &hm_l LEFT_SHIFT I    &hm_l LEFT_CONTROL COMMA     &kp G               &hm_r RIGHT_GUI T    &hm_r RIGHT_ALT R      &hm_r RIGHT_SHIFT N       &hm_r RIGHT_CONTROL S          &none
-&none       &kp Z                &kp APOSTROPHE       &kp DOT                &kp X                 &none                 &kp B               &kp P                 &kp M                    &kp W                     &none                         &none
-&kp C_AC_REFRESH  &none          &none                &none                  &none                 &none               &none               &none                  &none                   &none                    &none                         &none
-                                       &lt NAV ESCAPE      &lt NUM SPACE         &lt MOUSE TAB          &sl SYM               &lt MEDIA BACKSPACE
-                                                           &none                &to BASE              &kp ENTER
+&kp N1            &kp N2           &kp N3                &kp N4                &kp N5                &kp N6                 &kp N7               &kp N8                &kp N9                &kp N0                &kp MINUS                    &kp PLUS
+&kp ESCAPE        &kp Q            &kp K                 &kp O                 &kp U                 &kp Y                  &kp V                &kp D                 &kp C                 &kp L                 &kp F                       &kp J
+&none             &kp H            &hm_l LEFT_GUI A      &hm_l LEFT_ALT E      &hm_l LEFT_SHIFT I    &hm_l LEFT_CONTROL COMMA      &kp G                &hm_r RIGHT_GUI T     &hm_r RIGHT_ALT R      &hm_r RIGHT_SHIFT N   &hm_r RIGHT_CONTROL S       &none
+&kp C_AC_REFRESH  &kp LEFT_SHIFT   &kp Z                 &kp APOSTROPHE        &kp DOT               &kp X                  &kp B                &kp P                 &kp M                 &kp W                 &kp RIGHT_SHIFT             &none
+                                         &lt NAV SPACE      &lt MOUSE TAB         &lt MEDIA ESCAPE        &lt NUM BACKSPACE       &lt SYM ENTER
+                                                              &mkp LCLK             &mkp RCLK              &kp DELETE
             >;
 
             sensor-bindings =
