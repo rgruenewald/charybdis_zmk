@@ -47,7 +47,7 @@ layers:
   - B
   - {t: P, h: RIGHT CONTROL}
   - {t: M, h: RIGHT ALT}
-  - {t: W, h: RIGHT GUI}
+  - {t: W, h: LEFT GUI}
   - {t: LEFT SHIFT, h: LEFT SHIFT}
   - LEFT CONTROL
   - LEFT ALT
