@@ -49,9 +49,9 @@ layers:
   - W
   - RIGHT SHIFT
   - ''
-  - {t: ESCAPE, h: MEDIA}
+  - {t: TAB, h: MEDIA}
   - {t: SPACE, h: NAV}
-  - {t: TAB, h: MOUSE}
+  - {t: ESCAPE, h: MOUSE}
   - {t: DELETE, h: NUM}
   - {t: BACK SPACE, h: SYM}
   - L CLK
