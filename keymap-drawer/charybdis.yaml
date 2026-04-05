@@ -76,11 +76,11 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ Y
+  - Ctl+ Z
   - Ctl+ V
   - Ctl+ C
   - Ctl+ X
-  - Ctl+ Z
+  - Ctl+ Y
   - ''
   - ''
   - LEFT GUI
@@ -312,12 +312,12 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ Y
+  - Ctl+ Z
   - Ctl+ V
   - Ctl+ C
   - Ctl+ X
   - ''
-  - Ctl+ Z
+  - Ctl+ Y
   - ''
   - LEFT GUI
   - LEFT ALT
@@ -393,12 +393,12 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ Y
+  - Ctl+ Z
   - Ctl+ V
   - Ctl+ C
   - Ctl+ X
   - ''
-  - Ctl+ Z
+  - Ctl+ Y
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
