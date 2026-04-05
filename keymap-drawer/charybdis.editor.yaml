@@ -356,10 +356,10 @@ layers:
   - ''
   - ''
   - ''
-  - LEFT WIN
-  - LEFT ALT
-  - LCTRL
-  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - Ctl+ Y
   - Ctl+ V
@@ -367,11 +367,11 @@ layers:
   - Ctl+ X
   - Ctl+ Z
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: SCROLL, h: toggle}
+  - LEFT WIN
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
   - ''
   - ''
   - MOVE L
@@ -379,13 +379,13 @@ layers:
   - MOVE UP
   - MOVE R
   - ''
-  - {t: SCROLL, h: toggle}
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {t: SCROLL, h: toggle}
+  - ''
+  - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
