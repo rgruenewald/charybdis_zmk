@@ -132,6 +132,100 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
+
+        de_edia: de_edia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp DE_UMLAUT &kp DE_E>;
+        };
+
+        de_idia: de_idia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp DE_UMLAUT &kp DE_I>;
+        };
+
+        de_caret_char: de_caret_char {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp DE_CARET &kp SPACE>;
+        };
+
+        de_tilde_char: de_tilde_char {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp DE_TILDE &kp SPACE>;
+        };
+
+        sym_r1: sym_r1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_CARET>, <&de_caret_char>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_l3: sym_l3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_N3>, <&kp DE_HASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_l4: sym_l4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_EURO>, <&kp DE_DOLLAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_l5: sym_l5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_POUND_SIGN>, <&kp DE_PERCENT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_l6: sym_l6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_YEN>, <&none>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_r2: sym_r2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_LESS_THAN>, <&kp DE_AMPERSAND>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_r3: sym_r3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_GREATER_THAN>, <&kp DE_ASTERISK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_r4: sym_r4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_TILDE>, <&de_tilde_char>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_r5: sym_r5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp DE_UNDERSCORE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sym_r6: sym_r6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp DE_EQUAL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -194,9 +288,9 @@
         num_sym_layer {
             label = "SYMBOL";
             bindings = <
-&kp DE_N1          &kp DE_N2         &kp DE_N3        &kp DE_EURO         &kp DE_POUND_SIGN   &kp DE_CENT        &kp DE_CARET       &kp DE_LESS_THAN     &kp DE_GREATER_THAN       &kp DE_TILDE              &none                &none
-&none              &caps_word        &kp DE_AT_SIGN   &kp DE_O_UMLAUT     &none               &kp DE_DEGREE      &kp DE_BACKSLASH   &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET      &kp DE_ACUTE              &kp DE_GRAVE         &kp DE_C_CEDILLA
-&none              &kp DE_E_GRAVE    &kp DE_I         &kp DE_A_UMLAUT     &kp DE_U_UMLAUT     &kp DE_MINUS       &kp DE_SLASH       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL          &kp DE_MINUS         &kp DE_ASTERISK
+&kp DE_N1          &kp DE_N2         &sym_l3          &sym_l4             &sym_l5             &sym_l6            &sym_r1            &sym_r2              &sym_r3                   &sym_r4                   &sym_r5              &sym_r6
+&none              &caps_word        &kp DE_AT_SIGN   &kp DE_O_UMLAUT     &kp DE_MU           &kp DE_O           &kp DE_BACKSLASH   &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET      &kp DE_ACUTE              &kp DE_GRAVE         &kp DE_C_CEDILLA
+&none              &de_edia          &de_idia         &kp DE_A_UMLAUT     &kp DE_U_UMLAUT     &kp DE_SHARP_S     &kp DE_SLASH       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL          &kp DE_MINUS         &kp DE_ASTERISK
 &none              &none             &none            &kp DE_LEFT_BRACE   &kp DE_RIGHT_BRACE  &none              &kp DE_PIPE        &kp DE_EXCLAMATION   &kp DE_QUESTION           &kp DE_PLUS               &kp DE_UNDERSCORE    &none
                                       &none            &kp SPACE           &none               &none               &none
                                                     &none               &none               &none

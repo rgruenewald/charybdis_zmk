@@ -1386,6 +1386,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(RA(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1393,6 +1394,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(RA(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(ZMK HID U…</tspan></text>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1400,6 +1402,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(LS(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1414,6 +1417,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;de_caret_…</tspan></text>
 </g>
 <g transform="translate(588, 35)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1421,6 +1425,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(LS(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(644, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1428,6 +1433,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(LS(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(700, 35)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1435,14 +1441,17 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="-4" class="key tap">
 <tspan x="0" dy="-1.2em">(RA(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;de_tilde_…</tspan></text>
 </g>
 <g transform="translate(756, 49)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(LS(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(812, 49)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(LS(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1472,12 +1481,15 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-1.2em" style="font-size: 88%">((RA(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">HID</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">…</tspan>
+</text>
 </g>
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
+<tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
 </g>
 <g transform="translate(532, 98)" class="key keypos-18">
@@ -1529,16 +1541,12 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
-</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 88%">&amp;de_edia</tspan></text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
-</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 88%">&amp;de_idia</tspan></text>
 </g>
 <g transform="translate(196, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1558,7 +1566,7 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
+<tspan x="0" dy="-1.2em">(RA(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
 </g>
 <g transform="translate(532, 154)" class="key keypos-30">
