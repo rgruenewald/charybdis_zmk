@@ -37,8 +37,8 @@ layers:
   - N
   - S
   - {t: SYMBOL, h: sticky}
-  - {t: LEFT SHIFT, h: sticky}
-  - {t: LEFT SHIFT, h: sticky}
+  - {t: LEFT SHIFT, h: LEFT SHIFT}
+  - {t: LEFT SHIFT, h: LEFT SHIFT}
   - {t: Z, h: LEFT GUI}
   - {t: '''', h: LEFT ALT}
   - {t: ., h: LEFT CONTROL}
@@ -48,7 +48,7 @@ layers:
   - {t: P, h: RIGHT CONTROL}
   - {t: M, h: RIGHT ALT}
   - {t: W, h: RIGHT GUI}
-  - {t: LEFT SHIFT, h: sticky}
+  - {t: LEFT SHIFT, h: LEFT SHIFT}
   - LEFT CONTROL
   - LEFT ALT
   - {t: SPACE, h: NAV_EDIT}
@@ -248,22 +248,22 @@ layers:
   - ']'
   - '{'
   - '}'
-  - <
-  - '>'
-  - '|'
-  - /
-  - \
+  - ''''
+  - ;
+  - '['
+  - ']'
+  - ':'
   - {t: '?', type: held}
   - '='
   - +
   - '-'
   - _
   - /
+  - ''''
+  - '`'
+  - '~'
+  - ^
   - \
-  - '='
-  - +
-  - '-'
-  - _
   - ':'
   - '*'
   - <
