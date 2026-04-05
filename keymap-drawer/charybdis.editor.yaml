@@ -25,7 +25,7 @@ layers:
   - L
   - F
   - J
-  - ''
+  - {t: SCROLL, h: toggle}
   - H
   - {t: A, h: LEFT GUI}
   - {t: E, h: LEFT ALT}
@@ -116,16 +116,12 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - ''
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -133,39 +129,43 @@ layers:
   - ''
   - ''
   - '{'
+  - '&'
+  - '*'
+  - (
   - '}'
-  - '['
-  - ']'
-  - <
-  - '>'
   - ''
   - ''
-  - /
-  - \
-  - '|'
-  - _
-  - '`'
-  - '='
-  - +
-  - ;
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ':'
-  - '?'
+  - $
+  - '%'
+  - ^
+  - +
+  - ''
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
+  - _
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -173,61 +173,61 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - ''
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
   - ''
   - ''
-  - LEFT GUI
-  - LEFT ALT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '[', s: '{'}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: ']', s: '}'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ;, s: ':'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '=', s: +}
+  - ''
   - LEFT SHIFT
   - LEFT CONTROL
-  - ','
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - LEFT ALT
+  - LEFT GUI
   - ''
   - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F11
-  - DEV TOOLS
-  - .
-  - '-'
-  - /
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: \, s: '|'}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP PLUS
-  - KP MINUS
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ., s: '>'}
+  - {t: '0', s: )}
+  - {t: '-', s: _}
   - {type: held}
   - {t: ▽, type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   MEDIA:
   - ''
   - ''
@@ -292,12 +292,24 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Ctl+ Y
   - Ctl+ V
   - Ctl+ C
   - Ctl+ X
-  - ''
   - Ctl+ Z
+  - ''
   - ''
   - LEFT GUI
   - LEFT ALT
@@ -308,8 +320,8 @@ layers:
   - MOVE L
   - MOVE D
   - MOVE UP
-  - ''
   - MOVE R
+  - ''
   - ''
   - ''
   - ''
@@ -320,19 +332,7 @@ layers:
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
-  - {t: SCROLL, h: toggle}
   - '&msc SCRL_RIGHT'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -349,12 +349,12 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ Y
-  - Ctl+ V
-  - Ctl+ C
-  - Ctl+ X
   - ''
-  - Ctl+ Z
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - LEFT GUI
   - LEFT ALT
@@ -373,11 +373,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: SCROLL, h: toggle}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
-  - {t: SCROLL, h: toggle}
+  - ''
   - '&msc SCRL_RIGHT'
   - ''
   - ''
@@ -385,12 +385,12 @@ layers:
   - ''
   - ''
   - ''
+  - Ctl+ Y
+  - Ctl+ V
+  - Ctl+ C
+  - Ctl+ X
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Ctl+ Z
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -400,6 +400,19 @@ layers:
   - {t: ▽, type: trans}
   - M CLK
   FUN:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - DEV TOOLS
   - F7
   - F8
@@ -418,11 +431,11 @@ layers:
   - F6
   - SCROLLLOCK
   - ''
-  - ''
   - LEFT SHIFT
   - LEFT CONTROL
   - LEFT ALT
   - LEFT GUI
+  - ''
   - ''
   - F10
   - F1
@@ -435,22 +448,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - APP
+  - SPACE
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
