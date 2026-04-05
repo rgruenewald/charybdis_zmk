@@ -49,9 +49,9 @@ layers:
   - W
   - RIGHT SHIFT
   - ''
-  - {t: TAB, h: MEDIA}
+  - {t: TAB, h: MOUSE}
   - {t: SPACE, h: NAV}
-  - {t: ESCAPE, h: MOUSE}
+  - {t: ESCAPE, h: MEDIA}
   - {t: DELETE, h: NUM}
   - {t: BACK SPACE, h: SYM}
   - L CLK
@@ -285,9 +285,9 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -342,9 +342,9 @@ layers:
   - '&msc SCRL_UP'
   - ''
   - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - R CLK
   - L CLK
   - {t: ▽, type: trans}
