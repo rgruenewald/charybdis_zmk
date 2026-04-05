@@ -108,7 +108,7 @@
             bindings = <
 &kp ESCAPE  &kp Q                &kp K                &kp O                  &kp U                 &kp Y               &kp V               &kp D                 &kp C                   &kp L                    &kp F                         &kp BACKSPACE
 &none       &kp H                &hm_l LEFT_GUI A     &hm_l LEFT_ALT E       &hm_l LEFT_SHIFT I    &hm_l LEFT_CONTROL COMMA     &kp G               &hm_r RIGHT_GUI T    &hm_r RIGHT_ALT R      &hm_r RIGHT_SHIFT N       &hm_r RIGHT_CONTROL S          &none
-&none       &kp Z                &kp APOSTROPHE       &kp DOT                &kp X                 &kp B               &kp P               &kp M                 &kp W                   &kp J                    &kp MINUS                      &none
+&none       &kp Z                &kp APOSTROPHE       &kp DOT                &kp X                 &none               &kp P               &kp M                 &kp W                   &kp B                    &kp MINUS                      &kp J
 &kp C_AC_REFRESH  &none          &none                &none                  &none                 &none               &none               &none                  &none                   &none                    &none                         &none
                                        &lt NAV ESCAPE      &lt NUM SPACE         &lt MOUSE TAB          &sl SYM               &lt MEDIA BACKSPACE
                                                            &none                &to BASE              &kp ENTER
