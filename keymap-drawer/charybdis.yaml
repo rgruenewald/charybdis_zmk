@@ -64,35 +64,35 @@ layers:
   - ''
   - ''
   - ''
-  - PAGE UP
-  - HOME
-  - UP ARROW
-  - END
-  - DELETE
-  - ''
+  - Ctl+ Y
+  - Ctl+ V
+  - Ctl+ C
+  - Ctl+ X
+  - Ctl+ Z
   - ''
   - LEFT GUI
   - LEFT ALT
-  - LEFT SHIFT
   - LEFT CONTROL
+  - LEFT SHIFT
   - ''
+  - ''
+  - CAPSLOCK
   - LEFT
   - DOWN ARROW
+  - UP ARROW
   - RIGHT
-  - PAGE DOWN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - INSERT
-  - ''
-  - ''
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
-  - Ctl+ Y
   - HOME
   - PAGE DOWN
   - PAGE UP
   - END
-  - TAB
   - ''
   - ''
   - ''
