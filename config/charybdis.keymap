@@ -2,20 +2,24 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define BASE  0
-#define NAV   1
-#define SYM   2
-#define NUM   3
-#define MEDIA 4
+#define BASE    0
+#define NAV     1
+#define SYM     2
+#define NUM     3
+#define MEDIA   4
+#define MOUSE   5
+#define SCROLL  6
 
 / {
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
-        layers = <0>;
+        layers = <BASE NAV NUM MEDIA MOUSE>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -23,21 +27,10 @@
         scale-divisor = <2>;
     };
 
-    trackball_snipe_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&trackball>;
-        layers = <NUM>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <4>;
-    };
-
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
-        layers = <SYM>;
+        layers = <SCROLL>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -58,25 +51,25 @@
         combo_ae {
             timeout-ms = <30>;
             bindings = <&kp DE_A_UMLAUT>;
-            key-positions = <20 21>; /* a + e */
+            key-positions = <14 15>; /* a + e */
         };
 
         combo_oe {
             timeout-ms = <30>;
             bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <8 9>; /* o + u */
+            key-positions = <3 15>; /* o + e */
         };
 
         combo_ue {
             timeout-ms = <30>;
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <9 21>; /* u + e */
+            key-positions = <4 15>; /* u + e */
         };
 
         combo_sz {
             timeout-ms = <30>;
             bindings = <&kp DE_SHARP_S>;
-            key-positions = <16 17>; /* s + g */
+            key-positions = <21 22>; /* n + s */
         };
     };
 
@@ -114,12 +107,12 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp ESCAPE    &kp B                 &kp L                 &kp D                 &kp W                 &kp Z                  &kp J                &kp F                 &kp O                 &kp U                 &kp P                &kp BACKSPACE
-&trans        &hm_l LEFT_GUI N      &hm_l LEFT_ALT R      &hm_l LEFT_SHIFT T    &hm_l LEFT_CONTROL S  &kp G                  &kp Y                &hm_r RIGHT_CONTROL H &hm_r RIGHT_SHIFT A   &hm_r RIGHT_ALT E     &hm_r RIGHT_GUI I    &trans
-&trans        &kp Q                 &kp X                 &kp M                 &kp C                 &kp V                  &kp K                &kp DE_COMMA          &kp DE_DOT            &kp DE_SLASH          &kp DE_MINUS         &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &trans               &trans                &trans                &trans                &trans               &trans
-                                          &kp ESCAPE            &sl NAV               &kp SPACE              &sl SYM                &kp BACKSPACE
-                                                                 &sl NUM              &sl MEDIA              &kp ENTER
+&kp ESCAPE  &kp Q                &kp K                &kp O                  &kp U                 &kp Y               &kp V               &kp D                 &kp C                   &kp L                    &kp F                         &kp BACKSPACE
+&none       &kp H                &hm_l LEFT_GUI A     &hm_l LEFT_ALT E       &hm_l LEFT_SHIFT I    &hm_l LEFT_CONTROL DE_COMMA  &kp G               &hm_r RIGHT_GUI T    &hm_r RIGHT_ALT R      &hm_r RIGHT_SHIFT N       &hm_r RIGHT_CONTROL S          &none
+&none       &kp Z                &kp DE_APOSTROPHE    &kp DE_DOT             &kp X                 &kp B               &kp P               &kp M                 &kp W                   &kp J                    &kp DE_MINUS                   &none
+&kp C_AC_REFRESH  &none          &none                &none                  &none                 &none               &none               &none                  &none                   &none                    &none                         &none
+                                       &lt NAV ESCAPE      &lt NUM SPACE         &lt MOUSE TAB          &sl SYM               &lt MEDIA BACKSPACE
+                                                           &none                &to BASE              &kp ENTER
             >;
 
             sensor-bindings =
@@ -130,48 +123,72 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&trans        &none                 &none                 &none                 &none                 &none                  &kp PAGE_UP          &kp HOME              &kp UP                &kp END               &kp DELETE           &trans
-&trans        &kp LEFT_GUI          &kp LEFT_ALT          &kp LEFT_SHIFT        &kp LEFT_CONTROL      &none                  &kp LEFT_ARROW       &kp DOWN_ARROW        &kp RIGHT_ARROW       &kp PAGE_DOWN         &kp INSERT           &trans
-&trans        &kp LC(Z)             &kp LC(X)             &kp LC(C)             &kp LC(V)             &kp LC(Y)              &kp HOME             &kp PAGE_DOWN         &kp PAGE_UP           &kp END               &kp TAB              &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &trans               &trans                &trans                &trans                &trans               &trans
-                                          &none                 &trans                &trans                 &trans                 &trans
-                                                                 &trans               &trans                 &trans
+&none   &none             &none            &none            &none                &none                  &kp PAGE_UP    &kp HOME         &kp UP_ARROW    &kp END          &kp DELETE       &none
+&none   &kp LEFT_GUI      &kp LEFT_ALT     &kp LEFT_SHIFT   &kp LEFT_CONTROL     &none                  &kp LEFT_ARROW &kp DOWN_ARROW   &kp RIGHT_ARROW &kp PAGE_DOWN    &kp INSERT       &none
+&none   &kp LC(Z)         &kp LC(X)        &kp LC(C)        &kp LC(V)            &kp LC(Y)              &kp HOME       &kp PAGE_DOWN    &kp PAGE_UP     &kp END          &kp TAB          &none
+&none   &none             &none            &none            &none                &none                  &none          &none            &none           &none            &none            &none
+                                  &trans            &trans           &trans               &trans           &trans
+                                                     &trans           &trans           &trans
             >;
         };
 
         sym_layer {
-            label = "SYMBOLS";
+            label = "SYM";
             bindings = <
-&trans        &kp DE_EXCLAMATION    &kp DE_AT_SIGN        &kp DE_HASH           &kp DE_DOLLAR         &kp DE_PERCENT         &kp DE_CARET         &kp DE_AMPERSAND      &kp DE_ASTERISK       &kp DE_LEFT_PARENTHESIS &kp DE_RIGHT_PARENTHESIS &trans
-&trans        &sk LEFT_SHIFT        &kp DE_LEFT_BRACE     &kp DE_RIGHT_BRACE    &kp DE_LEFT_BRACKET   &kp DE_RIGHT_BRACKET   &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_EQUAL          &kp DE_PLUS           &kp DE_MINUS         &trans
-&trans        &sk RIGHT_ALT         &kp DE_SLASH          &kp DE_TILDE          &kp DE_UNDERSCORE     &kp DE_GRAVE           &kp DE_SEMICOLON     &kp DE_COLON          &kp DE_APOSTROPHE     &kp DE_DOUBLE_QUOTES  &kp DE_QUESTION      &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &trans               &trans                &trans                &trans                &trans               &trans
-                                          &none                 &trans                &trans                 &trans                 &trans
-                                                                 &trans               &trans                 &trans
+&none   &kp DE_EXCLAMATION  &kp DE_AT_SIGN    &kp DE_HASH      &kp DE_DOLLAR      &kp DE_PERCENT         &kp DE_CARET    &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &none
+&none   &sk LEFT_GUI        &sk LEFT_ALT      &sk LEFT_SHIFT   &sk LEFT_CONTROL   &kp DE_LEFT_BRACE      &kp DE_RIGHT_BRACE &kp DE_LEFT_BRACKET &kp DE_RIGHT_BRACKET &kp DE_LESS_THAN       &kp DE_GREATER_THAN       &none
+&none   &kp DE_SLASH        &kp DE_BACKSLASH  &kp DE_PIPE      &kp DE_UNDERSCORE  &kp DE_GRAVE           &kp DE_EQUAL    &kp DE_PLUS       &kp DE_SEMICOLON &kp DE_COLON             &kp DE_QUESTION           &none
+&none   &none               &none             &none            &none              &none                  &none           &none             &none            &none                    &none                     &none
+                                    &trans             &trans            &trans                &trans            &trans
+                                                       &trans            &trans            &trans
             >;
         };
 
         num_layer {
-            label = "NUMBERS";
+            label = "NUM";
             bindings = <
-&trans        &kp DE_N1             &kp DE_N2             &kp DE_N3             &kp DE_N4             &kp DE_N5              &kp DE_N6            &kp DE_N7             &kp DE_N8             &kp DE_N9             &kp DE_N0            &trans
-&trans        &kp LEFT_GUI          &kp LEFT_ALT          &kp LEFT_SHIFT        &kp LEFT_CONTROL      &none                  &kp F6               &kp F7                &kp F8                &kp F9                &kp F10              &trans
-&trans        &kp F1                &kp F2                &kp F3                &kp F4                &kp F5                 &kp F11              &kp F12               &kp DE_COMMA          &kp DE_DOT            &kp DE_MINUS         &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &kp KP_N4            &kp KP_N5             &kp KP_N6             &kp KP_MULTIPLY       &kp KP_DIVIDE        &trans
-                                          &none                 &trans                &trans                 &trans                 &trans
-                                                                 &kp KP_N1            &kp KP_N2              &kp KP_N3
+&none   &kp DE_N1       &kp DE_N2         &kp DE_N3        &kp DE_N4        &kp DE_N5          &kp DE_N6   &kp DE_N7   &kp DE_N8   &kp DE_N9   &kp DE_N0    &none
+&none   &kp LEFT_GUI    &kp LEFT_ALT      &kp LEFT_SHIFT   &kp LEFT_CONTROL &kp DE_COMMA       &kp F6      &kp F7      &kp F8      &kp F9      &kp F10      &none
+&none   &kp F1          &kp F2            &kp F3           &kp F4           &kp F5             &kp F11     &kp F12     &kp DE_DOT  &kp DE_MINUS &kp DE_SLASH &none
+&none   &none           &none             &none            &none            &none              &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS  &kp KP_MINUS &none
+                                &trans         &trans           &trans              &trans        &trans
+                                               &kp KP_N1       &kp KP_N2       &kp KP_N3
             >;
         };
 
         media_layer {
             label = "MEDIA";
             bindings = <
-&trans        &trans                &trans                &trans                &trans                &trans                 &trans               &trans                &trans                &trans                &trans               &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &kp C_PREV           &kp C_PLAY_PAUSE      &kp C_NEXT            &kp C_MUTE            &trans               &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &kp C_VOL_DN         &kp C_VOL_UP          &kp C_SLEEP           &kp C_AL_COFFEE       &trans               &trans
-&trans        &trans                &trans                &trans                &trans                &trans                 &trans               &trans                &trans                &trans                &trans               &trans
-                                          &none                 &trans                &trans                 &trans                 &trans
-                                                                 &trans               &trans                 &trans
+&none   &none  &none  &none  &none  &none   &none         &none              &none         &none             &none       &none
+&none   &none  &none  &none  &none  &none   &kp C_PREV    &kp C_PLAY_PAUSE   &kp C_NEXT    &kp C_MUTE        &none       &none
+&none   &none  &none  &none  &none  &none   &kp C_VOL_DN  &kp C_VOL_UP       &kp C_SLEEP   &kp C_AL_COFFEE   &none       &none
+&none   &none  &none  &none  &none  &none   &none         &none              &none         &none             &none       &none
+                          &trans  &trans  &trans         &trans             &trans
+                                          &trans         &trans             &trans
+            >;
+        };
+
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
+&none   &none        &none        &none        &none        &none         &mmv MOVE_UP      &none             &none         &none             &none  &none
+&none   &mkp LCLK    &mkp MCLK    &mkp RCLK    &none        &none         &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT   &tog SCROLL       &none  &none
+&none   &mkp MB4     &mkp MB5     &none        &none        &none         &msc SCRL_LEFT    &msc SCRL_DOWN    &msc SCRL_UP      &msc SCRL_RIGHT   &none  &none
+&none   &none        &none        &none        &none        &none         &none             &none             &none             &none             &none  &none
+                               &trans      &trans      &trans            &trans            &trans
+                                           &trans      &trans            &trans
+            >;
+        };
+
+        scroll_layer {
+            label = "SCROLL";
+            bindings = <
+&none   &none        &none        &none        &none        &none         &none             &none             &none             &none             &none  &none
+&none   &mkp LCLK    &mkp MCLK    &mkp RCLK    &none        &none         &none             &none             &none             &tog SCROLL       &none  &none
+&none   &none        &none        &none        &none        &none         &none             &none             &none             &none             &none  &none
+&none   &none        &none        &none        &none        &none         &none             &none             &none             &none             &none  &none
+                               &trans      &trans      &trans            &trans            &trans
+                                           &trans      &trans            &trans
             >;
         };
     };
