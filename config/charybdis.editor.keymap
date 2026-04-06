@@ -260,7 +260,7 @@
             bindings = <
 &kp N1            &kp N2          &kp N3            &kp N4            &kp N5              &kp N6                      &kp N7          &kp N8             &kp N9             &kp N0               &kp MINUS              &kp PLUS
 &kp ESCAPE        &kp Q           &kp K             &kp O             &kp U               &kp Y                       &kp V           &kp D              &kp C              &kp L                &kp F                  &kp J
-&tog 6            &kp H           &hm_l LEFT_GUI A  &hm_l LEFT_ALT E  &hm_l LEFT_SHIFT I  &hm_l LEFT_CONTROL COMMA    &kp G           &hm_r RIGHT_GUI T  &hm_r RIGHT_ALT R  &hm_r RIGHT_SHIFT N  &hm_r RIGHT_CONTROL S  &none
+&tog 6            &hm_l LEFT_GUI H  &hm_l LEFT_ALT A  &hm_l LEFT_CONTROL E  &kp I  &kp COMMA    &kp G           &hm_r RIGHT_SHIFT T  &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N  &hm_r RIGHT_GUI S  &none
 &kp C_AC_REFRESH  &kp LEFT_SHIFT  &kp Z             &kp APOSTROPHE    &kp DOT             &kp X                       &kp B           &kp P              &kp M              &kp W                &kp RIGHT_SHIFT        &none
 /* Visual/reference thumb mapping (hardware may be corrected in charybdis.keymap) */
                                                     &lt MEDIA ESCAPE  &lt NAV SPACE       &lt MOUSE TAB               &lt NUM DELETE  &lt SYM BACKSPACE

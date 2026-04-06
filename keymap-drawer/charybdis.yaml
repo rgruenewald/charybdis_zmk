@@ -26,16 +26,16 @@ layers:
   - F
   - J
   - {t: SCROLL, h: toggle}
-  - H
-  - {t: A, h: LEFT GUI}
-  - {t: E, h: LEFT ALT}
-  - {t: I, h: LEFT SHIFT}
-  - '&hm_l LEFT_CONTROL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
+  - {t: H, h: LEFT GUI}
+  - {t: A, h: LEFT ALT}
+  - {t: E, h: LEFT CONTROL}
+  - I
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
   - G
-  - {t: T, h: RIGHT GUI}
-  - {t: R, h: RIGHT ALT}
-  - {t: N, h: RIGHT SHIFT}
-  - {t: S, h: RIGHT CONTROL}
+  - {t: T, h: RIGHT SHIFT}
+  - {t: R, h: RIGHT CONTROL}
+  - {t: N, h: RIGHT ALT}
+  - {t: S, h: RIGHT GUI}
   - ''
   - AC REFRESH
   - LEFT SHIFT

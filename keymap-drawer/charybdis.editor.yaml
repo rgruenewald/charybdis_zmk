@@ -26,16 +26,16 @@ layers:
   - F
   - J
   - {t: SCROLL, h: toggle}
-  - H
-  - {t: A, h: LEFT GUI}
-  - {t: E, h: LEFT ALT}
-  - {t: I, h: LEFT SHIFT}
-  - {t: ',', h: LEFT CONTROL}
+  - {t: H, h: LEFT GUI}
+  - {t: A, h: LEFT ALT}
+  - {t: E, h: LEFT CONTROL}
+  - I
+  - ','
   - G
-  - {t: T, h: RIGHT GUI}
-  - {t: R, h: RIGHT ALT}
-  - {t: N, h: RIGHT SHIFT}
-  - {t: S, h: RIGHT CONTROL}
+  - {t: T, h: RIGHT SHIFT}
+  - {t: R, h: RIGHT CONTROL}
+  - {t: N, h: RIGHT ALT}
+  - {t: S, h: RIGHT GUI}
   - ''
   - AC REFRESH
   - LEFT SHIFT
