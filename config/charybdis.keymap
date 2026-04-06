@@ -205,7 +205,7 @@
             bindings = <
 &none   &none           &none             &none            &none             &none          &none            &none             &none           &none          &none        &none
 &none   &kp LEFT_GUI    &kp LEFT_ALT      &kp LEFT_CONTROL &kp LEFT_SHIFT    &none          &kp LC(Z)        &kp LC(V)         &kp LC(C)       &kp LC(X)      &none        &kp LC(Y)
-&none       &none        &none             &none            &none             &none          &none            &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP   &none        &mmv MOVE_RIGHT
+&tog SCROLL &none        &none             &none            &none             &none          &none            &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP   &none        &mmv MOVE_RIGHT
 &none   &none           &none             &none            &none             &none          &tog SCROLL      &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &none        &msc SCRL_RIGHT
                                &trans      &trans      &trans            &mkp RCLK         &mkp LCLK
                                            &trans      &trans            &mkp MCLK

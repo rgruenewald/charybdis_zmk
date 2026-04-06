@@ -367,7 +367,7 @@ layers:
   - Ctl+ X
   - Ctl+ Z
   - ''
-  - {t: SCROLL, h: toggle}
+  - ''
   - LEFT WIN
   - LEFT ALT
   - LCTRL
