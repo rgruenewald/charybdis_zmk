@@ -258,13 +258,12 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp N1            &kp N2          &kp N3            &kp N4            &kp N5              &kp N6                      &kp N7          &kp N8             &kp N9             &kp N0               &kp MINUS              &kp PLUS
-&kp ESCAPE        &kp Q           &kp K             &kp O             &kp U               &kp Y                       &kp V           &kp D              &kp C              &kp L                &kp F                  &kp J
-&tog 6            &hm_l LEFT_GUI H  &hm_l LEFT_ALT A  &hm_l LEFT_CONTROL E  &kp I  &kp COMMA    &kp G           &hm_r RIGHT_SHIFT T  &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N  &hm_r RIGHT_GUI S  &none
-&kp C_AC_REFRESH  &kp LEFT_SHIFT  &kp Z             &kp APOSTROPHE    &kp DOT             &kp X                       &kp B           &kp P              &kp M              &kp W                &kp RIGHT_SHIFT        &none
-/* Visual/reference thumb mapping (hardware may be corrected in charybdis.keymap) */
-                                                    &lt MEDIA ESCAPE  &lt NAV SPACE       &lt MOUSE TAB               &lt NUM DELETE  &lt SYM BACKSPACE
-                                                                      &mkp LCLK           &mkp RCLK                   &lt FUN ENTER
+&kp N1            &kp N2            &kp N3            &kp N4                &kp N5              &kp N6           &kp N7          &kp N8               &kp N9                 &kp N0             &kp MINUS         &kp PLUS
+&kp ESCAPE        &kp Q             &kp K             &kp O                 &kp U               &kp Y            &kp V           &kp D                &kp C                  &kp L              &kp F             &kp J
+&tog 6            &hm_l LEFT_GUI H  &hm_l LEFT_ALT A  &hm_l LEFT_CONTROL E  &hm_l LEFT_SHIFT I  &kp COMMA        &kp G           &hm_r RIGHT_SHIFT T  &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N  &hm_r LEFT_GUI S  &none
+&kp C_AC_REFRESH  &kp LEFT_SHIFT    &kp Z             &kp APOSTROPHE        &kp DOT             &kp X            &kp B           &kp P                &kp M                  &kp W              &kp RIGHT_SHIFT   &none
+                                                      &lt MEDIA ESCAPE      &lt NAV SPACE       &lt MOUSE TAB    &lt NUM DELETE  &lt SYM BACKSPACE
+                                                                            &mkp LCLK           &mkp RCLK        &lt FUN ENTER
             >;
 
             sensor-bindings =
@@ -335,12 +334,12 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&none        &none         &none         &none      &none           &none     &none      &none           &none           &none         &none            &none
-&none        &none         &none         &none      &none           &none     &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
-&none        &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none        &none         &none         &none      &none           &none     &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                                         &trans     &trans          &trans    &mkp MCLK  &mkp RCLK
-                                                    &trans          &trans    &mkp LCLK
+&none  &none         &none         &none      &none           &none     &none      &none           &none           &none         &none            &none
+&none  &none         &none         &none      &none           &none     &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none         &none         &none      &none           &none     &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                                   &trans     &trans          &trans    &mkp MCLK  &mkp RCLK
+                                              &trans          &trans    &mkp LCLK
             >;
         };
 

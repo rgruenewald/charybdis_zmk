@@ -29,13 +29,13 @@ layers:
   - {t: H, h: LEFT GUI}
   - {t: A, h: LEFT ALT}
   - {t: E, h: LEFT CONTROL}
-  - I
+  - {t: I, h: LEFT SHIFT}
   - ','
   - G
   - {t: T, h: RIGHT SHIFT}
   - {t: R, h: RIGHT CONTROL}
   - {t: N, h: RIGHT ALT}
-  - {t: S, h: RIGHT GUI}
+  - {t: S, h: LEFT GUI}
   - ''
   - AC REFRESH
   - LEFT SHIFT
