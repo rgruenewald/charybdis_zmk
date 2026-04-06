@@ -4,6 +4,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+/*
+ * Editor mirror keymap
+ * -------------------
+ * This file prioritizes keymap-editor readability.
+ * Hardware-specific corrections are made in `charybdis.keymap`.
+ */
+
 #define BASE    0
 #define NAV     1
 #define SYM     2
@@ -255,6 +262,7 @@
 &kp ESCAPE        &kp Q           &kp K             &kp O             &kp U               &kp Y                       &kp V           &kp D              &kp C              &kp L                &kp F                  &kp J
 &tog 6            &kp H           &hm_l LEFT_GUI A  &hm_l LEFT_ALT E  &hm_l LEFT_SHIFT I  &hm_l LEFT_CONTROL COMMA    &kp G           &hm_r RIGHT_GUI T  &hm_r RIGHT_ALT R  &hm_r RIGHT_SHIFT N  &hm_r RIGHT_CONTROL S  &none
 &kp C_AC_REFRESH  &kp LEFT_SHIFT  &kp Z             &kp APOSTROPHE    &kp DOT             &kp X                       &kp B           &kp P              &kp M              &kp W                &kp RIGHT_SHIFT        &none
+/* Visual/reference thumb mapping (hardware may be corrected in charybdis.keymap) */
                                                     &lt MEDIA ESCAPE  &lt NAV SPACE       &lt MOUSE TAB               &lt NUM DELETE  &lt SYM BACKSPACE
                                                                       &mkp LCLK           &mkp RCLK                   &lt FUN ENTER
             >;

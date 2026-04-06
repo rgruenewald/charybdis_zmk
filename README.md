@@ -1,144 +1,134 @@
-[![.github/workflows/build.yml](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml/badge.svg)](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml)
+# Charybdis ZMK Config (Anymak:END + Miryoku Layers)
 
-## Intro
+This repository contains a customized ZMK setup for a **Charybdis 4x6** with trackball.
 
-This repository offers pre-configured ZMK firmware designed for Wireless Charybdis keyboards, supporting both the ubiquitous QWERTY layout and the optimized Colemak DH layout. You can choose from two configurations:
+Current design goal:
 
-- Bluetooth and USB
-- Dongle
+- **Alphas:** Anymak:END-inspired base positions
+- **Layer system:** Miryoku-style 3x5 core mapping (adapted onto 4x6 from bottom/inside)
+- **Language profile:** German-first (DE keycodes, umlaut combos), English secondary
 
-Additionally, this repository automatically generates SVG images of all layers in the keymap, and adds it to the README. It also provides high level instructions and resources on how to customize and build the firmware to meet your specific needs.
+---
 
-Check out the [Charybdis Mini Wireless build guide](https://github.com/280Zo/charybdis-wireless-mini-3x6-build-guide?tab=readme-ov-file) if you haven't yet built your own Charybdis keyboard.
+## Key Files
 
-## Usage
+- `config/charybdis.keymap`
+  - **Hardware source of truth**
+  - Includes DE-specific and hardware-corrected mappings
+- `config/charybdis.editor.keymap`
+  - Editor-friendly mirror for visual tooling
+  - May intentionally differ in some hardware-corrected thumb/locale details
+- `config/keys_de_german.h`
+  - DE keycode overrides and fixes for real hardware output
 
-If you'd like to use the pre-built firmware the files can be found in the [Actions Workflows](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions?query=is%3Acompleted+branch%3Amain). To download them, log into Github, click the link, select the latest run that passed on the main branch, and download the applicable firmware. There are five firmware artifacts to choose from. If you're unsure which one to use, you probably want the firmware-charybdis-qwerty build.
+---
 
-- **firmware-charybdis-qwerty** - Bluetooth/USB with QWERTY layout
-- **firmware-charybdis-qwerty-dongle** - Dongle with QWERTY layout
-- **firmware-charybdis-colemak** - Bluetooth/USB with Colemak DH layout
-- **firmware-charybdis-colemak-dongle** - Dongle with Colemak DH layout
-- **firmware-reset-nanov2** - Reset the firmware completely
+## Layer Overview
 
-There are a few things to note about how the pre-built firmware is configured:
+Layer IDs are fixed in `charybdis.keymap`:
 
-- ZMK has terms for each side of a split keyboard. Central is the half that sends keyboard outputs over USB or advertises to other devices over bluetooth. Peripheral is the half that will only send keystrokes to the central once they are paired and connected through bluetooth. The Bluetooth/USB firmware uses the right side as central.
-- The dongle firmware will have much better battery life for the central side, but requires an extra MCU and can only be connected through the dongle.
-- The Bluetooth/USB firmware can connect through Bluetooth, but the central side will have a shorter battery life because it needs to maintain that connection.
-  - The central side can also be plugged in to USB and the keyboard can be used when Bluetooth on the host computer isn't available (e.g. BIOS navigation)
-- To add support for the PMW3610 low power trackball sensor, badjeff's [zmk-pmw3610-driver](https://github.com/badjeff/zmk-pmw3610-driver), [ZMK Input Behavior Listener](https://github.com/badjeff/zmk-input-behavior-listener?tab=readme-ov-file), and [ZMK Split Peripheral Input Relay](https://github.com/badjeff/zmk-split-peripheral-input-relay) modules are included in the firmware.
-- eigatech's [zmk-configs](https://github.com/eigatech/zmk-config?tab=readme-ov-file) played a major role in getting badjeff's drivers and modules fully configured and are a great resource
-- A separate branch builds the Bluetooth/USB firmware using [inorichi's driver](https://github.com/inorichi/zmk-pmw3610-driver?tab=readme-ov-file) as an alternative to badjeff's driver.
-- Pete Johanson (creator and lead of the ZMK firmware) developed a feature ([pointers-move-scroll](https://github.com/zmkfirmware/zmk/pull/2027)) that allows mouse keys to move and scroll. A successor feature ([pointers-with-input-processors](https://github.com/zmkfirmware/zmk/pull/2477)) was then developed that allows more flexibility. This feature is what will eventually be merged into the main ZMK branch, and it's what is used by this repo to build the firmware. Although it's not guranteed to be stable, it hasn't caused any noticible issues. That being said, if you'd prefer to use pointers-move-scroll which is in a stable state, you can update the west.yaml and adapt the config files accordingly.
+- `BASE = 0`
+- `NAV = 1`
+- `SYM = 2`
+- `NUM = 3`
+- `MEDIA = 4`
+- `MOUSE = 5`
+- `SCROLL = 6`
+- `FUN = 7`
 
-## Flashing the Firmware
+### Important Behavior
 
-Follow the steps below to flash the firmware
+- **Trackball pointer movement** is active on: `BASE NAV NUM MEDIA MOUSE`
+- **Trackball scrolling** is active only on: `SCROLL`
+- Scroll mode is toggled with `&tog SCROLL`
 
-- If you are flashing the firmware for the first time, or if you're switching between the dongle and the Bluetooth/USB configuration, flash the reset firmware to all the devices first
-- Unzip the firmware.zip
-- Plug the right half info the computer through USB
-- Double press the reset button
-- The keyboard will mount as a removable storage device
-- Copy the applicable uf2 file into the NICENANO storage device (e.g. charybdis_qwerty_dongle.uf2 -> dongle)
-- It will take a few seconds, then it will unmount and restart itself.
-- Repeat these steps for all devices.
-- You should now be able to use your keyboard
+---
 
-> [!NOTE]  
-> If the keyboard halves aren't connecting as expected, try pressing the reset button on both halves at the same time. If that doesn't work, follow the [ZMK Connection Issues](https://zmk.dev/docs/troubleshooting/connection-issues#acquiring-a-reset-uf2) documentation for more troubleshooting steps.
+## Thumb Philosophy (Very Important)
 
-## Keymaps & Layers
+There are known differences between what some editors show and what hardware emits (locale/layout transform effects).
 
-The base layer uses [home row mods](https://precondition.github.io/home-row-mods) to make typing as efficient and comfortable as possible. To reduce hand movement, extra attention has also been given to making sure cursor, scrolling, and mouse button operations are as seamless as possible.
+### Rule of thumb
 
-Review the layer maps below to see how each one functions. Then either modify the keymap to fit your needs, or start using these defaults to become more familiar with them.
+- Trust **`charybdis.keymap`** for actual keyboard behavior.
+- Keep `charybdis.editor.keymap` easy to visualize.
 
-Here are a few tips for a quick start:
+### Base thumbs
 
-- The bluetooth keys on the EXTRAS layer allow you to select which bluetooth pairing you want, BT-CLR clears the pairing on the selected profile.
+Left thumbs are hardware-corrected in `charybdis.keymap` so tap behavior matches expected physical output.
 
-- The left most thumb button has multiple functions
-  - When held, the function of the trackball is changed from moving the cursor to scrolling.
-  - When double tapped, it will reduce the cursor speed for more precision, and activate the mouse layer.
-  - When single tapped it outputs the escape key.
+Right thumbs keep the layer-switch logic with desired tap outputs (Delete/Backspace/Enter pattern as configured).
 
-![keymap images](keymap-drawer/charybdis.svg)
+---
 
-## Modify Key Mappings
+## German Typing Helpers
 
-### ZMK Studio
+### Combos (in `charybdis.keymap`)
 
-[ZMK Studio](https://zmk.studio/) allows users to update functionality during runtime. It's currently in beta, but the physical layout and updated config files are included in the BT/USB firmware for testing. The dongle firmware does not have this integration at the moment.
+- `a + e -> ä`
+- `o + e -> ö`
+- `u + e -> ü`
+- `n + s -> ß`
 
-To change the visual layout of the keys, the physical layout must be updated. This is the charybdis-layouts.dtsi file, which handles the actual physical positions of the keys. Though they may appear to be similar, this is different than the matrix transform file (charybdis.json) which handles the electrical matrix to keymap relationship.
+### Shifted dual-bindings on NUM layer
 
-To easily modify the physical layout, or convert a matrix transform file, [caksoylar](https://github.com/caksoylar/zmk-physical-layout-converter) has built the [ZMK physical layouts converter](https://zmk-physical-layout-converter.streamlit.app/).
+`n1s..n0s`, plus side symbols (`nlb`, `nrb`, `neq`, `nbs`, etc.) are implemented with `mod-morph` so:
 
-For more details on how to use ZMK Studio, refer to the [ZMK documentation](https://zmk.dev/docs/features/studio).
+- tap = base symbol/number
+- with Shift = shifted counterpart
 
-### Keymap GUI
+Examples:
 
-Using a GUI to generate the keymap file before building the firmware is another easy way to modify the key mappings. Head over to nickcoutsos' keymap editor and follow the steps below.
+- `8 -> *` with Shift
+- `5 -> %` with Shift
+- `] -> }` with Shift
+- `= -> +` with Shift
 
-- Fork/Clone this repo
-- Open a new tab to the [keymap editor](https://nickcoutsos.github.io/keymap-editor/)
-- Give it permission to see your repo
-- Select the branch you'd like to modify
-- Update the keys to match what you'd like to use on your keyboard
-- Save
-- Wait for the pipeline to run
-- Download and flash the new firmware
+---
 
-### Edit Keymap Directly
+## How to Customize Safely (Recommended Workflow)
 
-To change a key layout choose a behavior you'd like to assign to a key, then choose a parameter code. This process is more clearly outlined on ZMK's [Keymaps & Behaviors](https://zmk.dev/docs/features/keymaps) page.
+1. **Edit** `config/charybdis.keymap` first (real behavior).
+2. Mirror visual-only adjustments into `config/charybdis.editor.keymap` if needed.
+3. Keep all layers at the same key count (keymap-drawer requires this).
+4. Commit and push, then validate in Actions build.
 
-- Behaviors are all documented on the [Behaviors Overview](https://zmk.dev/docs/behaviors)
-- Codes are all documented on the [keycodes](https://zmk.dev/docs/codes) page
+---
 
-Open the keymap file and change keys, or add/remove layers, then merge the changes and re-flash the keyboard with the updated firmware.
+## Common Pitfalls
 
-## Changing the Central and Peripheral Assignments
+- **Editor looks right, hardware is wrong**
+  - Usually locale/transform mismatch. Fix in `charybdis.keymap` (not necessarily in editor file).
+- **Cannot exit SCROLL layer**
+  - Ensure `&tog SCROLL` exists at a reachable position in `SCROLL` layer.
+- **keymap-drawer assertion: different key counts**
+  - One layer has extra/missing bindings; align all layers.
 
-Follow the ZMK documentation [Kconfig.deconfig](https://zmk.dev/docs/development/new-shield#kconfigdefconfig) to change which keyboard half is the central and which is the peripheral. This does not apply to the dongle configuration.
+---
 
-## Changing the Keyboard Name
+## Build / CI
 
-Follow the ZMK [Kconfig.defconfig](https://zmk.dev/docs/development/new-shield#kconfigdefconfig) section to update the keyboard name. Make sure to read about the danger in exceeding the 16 character limit.
+Builds run via GitHub Actions. You can manually trigger workflow runs with:
 
-## Building Your Own Firmware
+```bash
+gh workflow run "ZMK Firmware" --ref mini_rgb_migration
+```
 
-ZMK provides a comprehensive guide to follow when creating a [New Keyboard Shield](https://zmk.dev/docs/development/new-shield). I'll touch on some of the points here, but their docs should be what you reference when you're building your own firmware.
+Check latest run:
 
-### File Structure
+```bash
+gh run list --workflow "ZMK Firmware" --branch mini_rgb_migration --limit 1
+```
 
-When building the ZMK firmware, the files need to be located in the correct place. The formats and locations of the files can be found on ZMK's [Configuration Overview](https://zmk.dev/docs/config).
+---
 
-### Mapping GPIO Pins to Keys
+## Maintenance Notes
 
-To set up some of the configuration files it requires a knowledge of which keys connect to which pins on the MCU (see the [Shield Overlays](https://zmk.dev/docs/development/new-shield#shield-overlays) section), and how the rows and columns are wired.
+If behavior regresses after forced updates/rebases:
 
-To get this information, look at the PCB kcad files and follow the traces from key pads, to row and column through holes, to MCU through holes. Once you have that information you can update the applicable dtsi/overlay files.
+1. verify current branch head,
+2. verify layer IDs (`BASE..FUN`) did not shift,
+3. verify thumb hold-tap targets,
+4. verify DE overrides in `keys_de_german.h`.
 
-## Creating Graphical Key Maps
-
-This repo uses the excellent work of caksoylar's [Keymap Drawer](https://keymap-drawer.streamlit.app/) to automatically generate a key mapping of each layer when the Github Actions are run.
-
-## Upcoming ZMK Features
-
-ZMK is actively being developed and there are a few features that will be added to these builds if/when they are approved.
-
-- Layer Lock - [Open PR](https://github.com/zmkfirmware/zmk/pull/1984)
-- Unicode Support - [Issue](https://github.com/zmkfirmware/zmk/issues/232)
-
-## Credits
-
-- [eigatech](https://github.com/eigatech)
-- [badjeff](https://github.com/badjeff)
-- [inorichi](https://github.com/inorichi)
-- [manna-harbour](https://github.com/manna-harbour)
-- [nickcoutsos](https://github.com/nickcoutsos/keymap-editor)
-- [Petejohanson](https://github.com/petejohanson)
-- [caksoylar](https://github.com/caksoylar/keymap-drawer)
+Document every hardware-specific correction in comments directly above affected bindings.
