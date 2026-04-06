@@ -71,10 +71,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: LEFT GUI, h: sticky}
+  - {t: LEFT ALT, h: sticky}
+  - {t: LEFT CONTROL, h: sticky}
+  - {t: LEFT SHIFT, h: sticky}
   - ''
   - Ctl+ Z
   - Ctl+ V
