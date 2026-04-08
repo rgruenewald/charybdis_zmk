@@ -56,19 +56,6 @@
         input-code = <INPUT_REL_WHEEL>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        /* Keep only ß combo; umlauts use DE dead-key flow on SYM */
-
-        combo_sz {
-            timeout-ms = <30>;
-            bindings = <&kp DE_SHARP_S>;
-            /* corrected positions: N = 33, S = 34 */
-            key-positions = <33 34>;
-        };
-    };
-
     behaviors {
         /* Home-row mod hold-tap behaviors with opposite-hand hold triggers */
         hm_l: hm_l {
@@ -124,9 +111,9 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp DE_N1        &kp DE_N2         &kp DE_N3              &kp DE_N4              &kp DE_N5              &kp DE_N6               &kp DE_N7             &kp DE_N8              &kp DE_N9              &kp DE_N0              &kp DE_MINUS                 &kp DE_PLUS
+&kp DE_N1        &kp DE_N2         &kp DE_N3              &kp DE_N4              &kp DE_N5              &kp DE_N6               &kp DE_N7             &kp DE_N8              &kp DE_N9              &kp DE_N0              &kp DE_SHARP_S               &kp DE_PLUS
 &kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp Y                   &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
-&tog SCROLL      &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &kp I                  &kp DE_COMMA                  &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &none
+&tog SCROLL      &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I      &kp DE_COMMA                  &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &none
 &kp C_AC_REFRESH &kp LEFT_SHIFT    &kp Z                  &kp DE_APOSTROPHE      &kp DE_DOT             &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp DE_UMLAUT
 /* Left thumbs (hardware-corrected): TAB, SPACE, ESC as tap */
 &lt MOUSE TAB      &lt NAV SPACE         &lt MEDIA ESCAPE        &lt NUM DELETE           &lt SYM BACKSPACE

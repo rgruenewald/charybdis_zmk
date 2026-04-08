@@ -11,7 +11,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
+  - SHARP S
   - +
   - ESCAPE
   - Q
@@ -456,6 +456,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-combos:
-- p: [21, 22]
-  k: S
