@@ -48,7 +48,7 @@ layers:
   - M
   - W
   - RIGHT SHIFT
-  - ''
+  - UMLAUT
   - {t: ESCAPE, h: MEDIA}
   - {t: SPACE, h: NAV}
   - {t: TAB, h: MOUSE}
