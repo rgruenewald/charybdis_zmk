@@ -59,30 +59,13 @@
     combos {
         compatible = "zmk,combos";
 
-        /* German umlaut helpers on alpha positions */
-
-        combo_ae {
-            timeout-ms = <30>;
-            bindings = <&kp DE_A_UMLAUT>;
-            key-positions = <14 15>; /* a + e */
-        };
-
-        combo_oe {
-            timeout-ms = <30>;
-            bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <3 15>; /* o + e */
-        };
-
-        combo_ue {
-            timeout-ms = <30>;
-            bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <4 15>; /* u + e */
-        };
+        /* Keep only ß combo; umlauts use DE dead-key flow on SYM */
 
         combo_sz {
             timeout-ms = <30>;
             bindings = <&kp DE_SHARP_S>;
-            key-positions = <21 22>; /* n + s */
+            /* corrected positions: N = 33, S = 34 */
+            key-positions = <33 34>;
         };
     };
 
@@ -173,7 +156,7 @@
 &none   &none               &none             &none                 &none                 &none                  &none   &none          &none            &none        &none       &none
 &none   &kp DE_LEFT_BRACE   &kp DE_AMPERSAND  &kp DE_ASTERISK       &kp DE_LEFT_PARENTHESIS &kp DE_RIGHT_BRACE   &none   &none          &none            &none        &none       &none
 &none   &kp DE_COLON        &kp DE_DOLLAR     &kp DE_PERCENT        &kp DE_CARET         &kp DE_PLUS            &none   &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
-&none   &kp DE_TILDE        &kp DE_EXCLAMATION &kp DE_AT_SIGN       &kp DE_HASH          &kp DE_PIPE            &none   &none          &none            &none        &none       &none
+&none   &kp DE_UMLAUT       &kp DE_EXCLAMATION &kp DE_AT_SIGN       &kp DE_HASH          &kp DE_PIPE            &none   &none          &none            &none        &none       &none
 /* Left thumbs on SYM are hardware-corrected order: _, ), ( */
                                 &kp DE_UNDERSCORE        &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_PARENTHESIS  &trans      &trans
                                                         &trans                &trans              &trans

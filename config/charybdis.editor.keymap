@@ -53,23 +53,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_ae {
-            timeout-ms = <30>;
-            bindings = <&kp A>;
-            key-positions = <14 15>; /* a + e */
-        };
-
-        combo_oe {
-            timeout-ms = <30>;
-            bindings = <&kp O>;
-            key-positions = <3 15>; /* o + e */
-        };
-
-        combo_ue {
-            timeout-ms = <30>;
-            bindings = <&kp U>;
-            key-positions = <4 15>; /* u + e */
-        };
+        /* Keep only ß combo; umlauts use dead key flow */
 
         combo_sz {
             timeout-ms = <30>;
@@ -289,7 +273,7 @@
 &none  &none      &none     &none      &none      &none        &none   &none           &none             &none         &none         &none
 &none  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC     &none   &none           &none             &none         &none         &none
 &none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none   &none           &none             &none         &none         &none
+&none  &kp DE_UMLAUT  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none   &none           &none             &none         &none         &none
                             &kp LPAR   &kp RPAR   &kp UNDER    &trans  &trans
                                        &trans     &trans       &trans
             >;
