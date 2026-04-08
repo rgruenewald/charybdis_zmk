@@ -230,10 +230,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp N1            &kp N2            &kp N3            &kp N4                &kp N5              &kp N6           &kp N7          &kp N8               &kp N9                 &kp N0             &kp DE_SHARP_S    &kp PLUS
+&kp N1            &kp N2            &kp N3            &kp N4                &kp N5              &kp N6           &kp N7          &kp N8               &kp N9                 &kp N0             &kp MINUS         &kp PLUS
 &kp ESCAPE        &kp Q             &kp K             &kp O                 &kp U               &kp Y            &kp V           &kp D                &kp C                  &kp L              &kp F             &kp J
 &tog 6            &hm_l LEFT_GUI H  &hm_l LEFT_ALT A  &hm_l LEFT_CONTROL E  &hm_l LEFT_SHIFT I  &kp COMMA        &kp G           &hm_r RIGHT_SHIFT T  &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N  &hm_r LEFT_GUI S  &none
-&kp C_AC_REFRESH  &kp LEFT_SHIFT    &kp Z             &kp APOSTROPHE        &kp DOT             &kp X            &kp B           &kp P                &kp M                  &kp W              &kp RIGHT_SHIFT   &kp DE_UMLAUT
+&kp C_AC_REFRESH  &kp LEFT_SHIFT    &kp Z             &kp APOSTROPHE        &kp DOT             &kp X            &kp B           &kp P                &kp M                  &kp W              &kp RIGHT_SHIFT   &kp LBKT
                                                       &lt MEDIA ESCAPE      &lt NAV SPACE       &lt MOUSE TAB    &lt NUM DELETE  &lt SYM BACKSPACE
                                                                             &mkp LCLK           &mkp RCLK        &lt FUN ENTER
             >;
@@ -261,7 +261,7 @@
 &none  &none      &none     &none      &none      &none        &none   &none           &none             &none         &none         &none
 &none  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC     &none   &none           &none             &none         &none         &none
 &none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&none  &kp DE_UMLAUT  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none   &none           &none             &none         &none         &none
+&none  &kp LBKT       &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none   &none           &none             &none         &none         &none
                             &kp LPAR   &kp RPAR   &kp UNDER    &trans  &trans
                                        &trans     &trans       &trans
             >;
