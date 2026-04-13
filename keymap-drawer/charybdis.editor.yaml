@@ -36,8 +36,8 @@ layers:
   - {t: R, h: RIGHT CONTROL}
   - {t: N, h: RIGHT ALT}
   - {t: S, h: LEFT GUI}
-  - ''
-  - AC REFRESH
+  - '['
+  - {t: /, s: \}
   - LEFT SHIFT
   - Z
   - ''''
@@ -48,7 +48,7 @@ layers:
   - M
   - W
   - RIGHT SHIFT
-  - '['
+  - '-'
   - {t: ESCAPE, h: MEDIA}
   - {t: SPACE, h: NAV}
   - {t: TAB, h: MOUSE}
