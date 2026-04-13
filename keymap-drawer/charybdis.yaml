@@ -25,7 +25,7 @@ layers:
   - L
   - F
   - J
-  - {t: SCROLL, h: toggle}
+  - SCROLL
   - {t: H, h: LEFT GUI}
   - {t: A, h: LEFT ALT}
   - {t: E, h: LEFT CONTROL}
@@ -330,13 +330,13 @@ layers:
   - MOVE UP
   - ''
   - MOVE R
-  - {t: SCROLL, h: toggle}
+  - SCROLL
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {t: SCROLL, h: toggle}
+  - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
@@ -375,7 +375,7 @@ layers:
   - Ctl+ X
   - ''
   - Ctl+ Y
-  - {t: SCROLL, h: toggle}
+  - {type: held}
   - ''
   - ''
   - ''
@@ -393,7 +393,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: SCROLL, h: toggle}
+  - ''
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
