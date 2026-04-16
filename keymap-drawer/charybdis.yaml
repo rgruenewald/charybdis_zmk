@@ -52,8 +52,8 @@ layers:
   - {t: TAB, h: MOUSE}
   - {t: SPACE, h: NAV}
   - {t: ESCAPE, h: MEDIA}
-  - {t: ENTER, h: NUM}
-  - {t: BACK SPACE, h: SYM}
+  - {t: BACK SPACE, h: NUM}
+  - {t: ENTER, h: SYM}
   - L CLK
   - R CLK
   - {t: DELETE, h: FUN}
