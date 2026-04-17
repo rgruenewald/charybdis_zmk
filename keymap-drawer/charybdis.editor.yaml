@@ -25,7 +25,7 @@ layers:
   - L
   - F
   - J
-  - SCROLL
+  - M CLK
   - {t: H, h: LEFT GUI}
   - {t: A, h: LEFT ALT}
   - {t: E, h: LEFT CONTROL}
@@ -55,7 +55,7 @@ layers:
   - {t: ENTER, h: NUM}
   - {t: BACK SPACE, h: SYM}
   - L CLK
-  - R CLK
+  - {t: R CLK, h: SCROLL}
   - {t: DELETE, h: FUN}
   NAV:
   - ''
@@ -367,7 +367,7 @@ layers:
   - Ctl+ X
   - ''
   - Ctl+ Y
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -397,7 +397,7 @@ layers:
   - R CLK
   - L CLK
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - M CLK
   FUN:
   - ''

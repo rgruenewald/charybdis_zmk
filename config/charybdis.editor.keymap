@@ -125,6 +125,16 @@
             bindings = <&mo>, <&kp>;
         };
 
+        /* Mouse button hold-tap: tap right click, hold scroll layer. */
+        rclk_scroll: rclk_scroll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RCLK_SCR";
+            #binding-cells = <2>;
+            tapping-term-ms = <210>;
+            flavor = "balanced";
+            bindings = <&mo>, <&mkp>;
+        };
+
         /* NUM layer shifted dual-bindings (tap number, hold shift => symbol) */
         n7s: n7s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>, <&kp AMPS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         n8s: n8s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>, <&kp STAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
@@ -155,11 +165,11 @@
             bindings = <
 &kp N1           &kp N2            &kp N3                 &kp N4                 &kp N5                 &kp N6                  &kp N7                &kp N8                 &kp N9                 &kp N0                 &kp MINUS                    &kp PLUS
 &kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp Y                   &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
-&mo SCROLL       &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &kp LBKT
+&mkp MCLK        &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &kp LBKT
 &sls             &kp LEFT_SHIFT    &kp Z                  &kp APOSTROPHE         &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp RBKT
 /* Left thumbs (hardware-corrected): TAB/ESC as tap; Space, Enter, Backspace, Delete use quick-tap repeat before layer hold. */
 &lt MOUSE TAB      &spc_nav NAV SPACE     &lt MEDIA ESCAPE        &ent_num NUM ENTER      &bspc_sym SYM BACKSPACE
-                                                                &mkp LCLK             &mkp RCLK              &del_fun FUN DELETE
+                                                                &mkp LCLK             &rclk_scroll SCROLL RCLK  &del_fun FUN DELETE
             >;
 
             sensor-bindings =
