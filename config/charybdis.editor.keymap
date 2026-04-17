@@ -1,17 +1,14 @@
-#include "keys_de_german.h"
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 /*
- * Custom Charybdis 4x6 layout (Anymak END alphas + Miryoku-style layers)
- * -----------------------------------------------------------------------
- * This file is the hardware source of truth.
- * `charybdis.editor.keymap` is kept editor-friendly and may differ in naming.
+ * Editor mirror keymap
+ * -------------------
+ * This file prioritizes keymap-editor readability.
+ * Hardware-specific corrections are made in `charybdis.keymap`.
  */
 
 /* Layer IDs (keep stable; referenced by listeners and toggles) */
@@ -85,25 +82,25 @@
         };
 
         /* NUM layer shifted dual-bindings (tap number, hold shift => symbol) */
-        n7s: n7s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N7>, <&kp DE_AMPERSAND>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n8s: n8s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N8>, <&kp DE_ASTERISK>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n9s: n9s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N9>, <&kp DE_LEFT_PARENTHESIS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n4s: n4s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N4>, <&kp DE_DOLLAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n5s: n5s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N5>, <&kp DE_PERCENT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n6s: n6s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N6>, <&kp DE_CARET>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n1s: n1s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N1>, <&kp DE_EXCLAMATION>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n2s: n2s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N2>, <&kp DE_AT_SIGN>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n3s: n3s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N3>, <&kp DE_HASH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        n0s: n0s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_N0>, <&kp DE_RIGHT_PARENTHESIS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nds: nds { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_DOT>, <&kp DE_GREATER_THAN>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nms: nms { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_MINUS>, <&kp DE_UNDERSCORE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nlb: nlb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_LEFT_BRACKET>, <&kp DE_LEFT_BRACE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nsc: nsc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_SEMICOLON>, <&kp DE_COLON>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        ngr: ngr { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_GRAVE>, <&kp DE_TILDE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nrb: nrb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_RIGHT_BRACKET>, <&kp DE_RIGHT_BRACE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        neq: neq { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_EQUAL>, <&kp DE_PLUS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        nbs: nbs { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_BACKSLASH>, <&kp DE_PIPE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        sls: sls { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DE_SLASH>, <&kp DE_BACKSLASH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n7s: n7s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>, <&kp AMPS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n8s: n8s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>, <&kp STAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n9s: n9s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N9>, <&kp LPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n4s: n4s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N4>, <&kp DLLR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n5s: n5s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N5>, <&kp PRCNT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n6s: n6s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N6>, <&kp CARET>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n1s: n1s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N1>, <&kp EXCL>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n2s: n2s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N2>, <&kp AT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n3s: n3s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N3>, <&kp HASH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        n0s: n0s { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N0>, <&kp RPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nds: nds { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp GT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nms: nms { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp UNDER>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nlb: nlb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LBKT>, <&kp LBRC>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nsc: nsc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SEMI>, <&kp COLON>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        ngr: ngr { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp GRAVE>, <&kp TILDE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nrb: nrb { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp RBKT>, <&kp RBRC>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        neq: neq { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp PLUS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        nbs: nbs { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp BSLH>, <&kp PIPE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        sls: sls { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SLASH>, <&kp BSLH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     keymap {
@@ -112,11 +109,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&kp DE_N1        &kp DE_N2         &kp DE_N3              &kp DE_N4              &kp DE_N5              &kp DE_N6               &kp DE_N7             &kp DE_N8              &kp DE_N9              &kp DE_N0              &kp DE_MINUS                 &kp DE_PLUS
-/* DE localization correction: explicit DE_Y/DE_Z fixes Y/Z swap on hardware */
-&kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp DE_Y                &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
-&mo SCROLL       &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I      &kp DE_COMMA                  &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &kp DE_UMLAUT
-&sls             &kp LEFT_SHIFT    &kp DE_Z               &kp DE_APOSTROPHE      &kp DE_DOT             &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp DE_SHARP_S
+&kp N1           &kp N2            &kp N3                 &kp N4                 &kp N5                 &kp N6                  &kp N7                &kp N8                 &kp N9                 &kp N0                 &kp MINUS                    &kp PLUS
+&kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp Y                   &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
+&mo SCROLL       &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &kp LBKT
+&sls             &kp LEFT_SHIFT    &kp Z                  &kp APOSTROPHE         &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp RBKT
 /* Left thumbs (hardware-corrected): TAB, SPACE, ESC as tap */
 &lt MOUSE TAB      &lt NAV SPACE         &lt MEDIA ESCAPE        &lt NUM ENTER            &lt SYM BACKSPACE
                                                                &mkp LCLK             &mkp RCLK              &lt FUN DELETE
@@ -143,11 +139,11 @@
             label = "SYM";
             bindings = <
 &none   &none               &none             &none                 &none                 &none                  &none   &none          &none            &none        &none       &none
-&none   &kp DE_LEFT_BRACE   &kp DE_AMPERSAND  &kp DE_ASTERISK       &kp DE_LEFT_PARENTHESIS &kp DE_RIGHT_BRACE   &none   &none          &none            &none        &none       &none
-&none   &kp DE_COLON        &kp DE_DOLLAR     &kp DE_PERCENT        &kp DE_CARET         &kp DE_PLUS            &none   &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
-&none   &kp DE_UMLAUT       &kp DE_EXCLAMATION &kp DE_AT_SIGN       &kp DE_HASH          &kp DE_PIPE            &none   &none          &none            &none        &none       &none
+&none   &kp LBRC            &kp AMPS           &kp STAR              &kp LPAR                 &kp RBRC            &none   &none          &none            &none        &none       &none
+&none   &kp COLON           &kp DLLR           &kp PRCNT             &kp CARET                &kp PLUS            &none   &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI &none
+&none   &kp LBKT            &kp EXCL           &kp AT                &kp HASH                 &kp PIPE            &none   &none          &none            &none        &none       &none
 /* Left thumbs on SYM are hardware-corrected order: _, ), ( */
-                                &kp DE_UNDERSCORE        &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_PARENTHESIS  &trans      &trans
+                                &kp UNDER                &kp RPAR                  &kp LPAR                 &trans      &trans
                                                         &trans                &trans              &trans
             >;
         };
