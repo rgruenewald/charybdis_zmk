@@ -85,11 +85,11 @@
         bspc_sym: bspc_sym {
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC_SYM";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <210>;
             quick-tap-ms = <200>;
             flavor = "balanced";
-            bindings = <&mo SYM>, <&kp BACKSPACE>;
+            bindings = <&mo>, <&kp>;
         };
 
         /* NUM layer shifted dual-bindings (tap number, hold shift => symbol) */
@@ -125,7 +125,7 @@
 &mo SCROLL       &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &kp LBKT
 &sls             &kp LEFT_SHIFT    &kp Z                  &kp APOSTROPHE         &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp RBKT
 /* Left thumbs (hardware-corrected): TAB, SPACE, ESC as tap; Backspace uses quick-tap repeat before SYM hold. */
-&lt MOUSE TAB      &lt NAV SPACE         &lt MEDIA ESCAPE        &lt NUM ENTER            &bspc_sym
+&lt MOUSE TAB      &lt NAV SPACE         &lt MEDIA ESCAPE        &lt NUM ENTER            &bspc_sym SYM BACKSPACE
                                                                 &mkp LCLK             &mkp RCLK              &lt FUN DELETE
             >;
 
