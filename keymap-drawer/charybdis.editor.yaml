@@ -261,7 +261,7 @@ layers:
   - ''
   - VOL DN
   - VOL UP
-  - SLEEP
+  - ''
   - LOCK
   - ''
   - ''
@@ -276,7 +276,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - SLEEP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
