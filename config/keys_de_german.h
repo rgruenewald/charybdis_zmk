@@ -97,6 +97,11 @@
 #undef DE_SS
 #define DE_SS (DE_SHARP_S)
 
+/* ' and ": physical apostrophe/quote key */
+#ifndef DE_APOS_QUOTE
+#define DE_APOS_QUOTE (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE))
+#endif
+
 /* £ on DE-DE commonly via AltGr+Shift+3 */
 #undef DE_POUND_SIGN
 #undef DE_POUND
