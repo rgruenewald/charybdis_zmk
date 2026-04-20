@@ -170,7 +170,7 @@
 &kp DE_N1        &kp DE_N2         &kp DE_N3              &kp DE_N4              &kp DE_N5              &kp DE_N6               &kp DE_N7             &kp DE_N8              &kp DE_N9              &kp DE_N0              &kp DE_SHARP_S              &kp DE_PLUS
 /* DE localization correction: explicit DE_Y/DE_Z fixes Y/Z swap on hardware */
 &kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp DE_Y                &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
-&mkp MCLK        &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I      &kp DE_COMMA                  &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &lt UML DE_UMLAUT
+&mkp MCLK        &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I      &kp DE_COMMA                  &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &lt UML DE_APOS_QUOTE
 &sls             &kp LEFT_SHIFT    &kp DE_Z               &kp DE_MINUS            &kp DE_DOT             &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp DE_BSLH
 /* Base layer workflow tweak: prioritize -/_ on the inner left key, keep ß/? on the far-right top key, reserve the far-right bottom key for quotes, and use the free right-lower key for backslash. */
 &lt MOUSE TAB      &spc_nav NAV SPACE     &lt MEDIA ESCAPE        &ent_num NUM ENTER      &bspc_sym SYM BACKSPACE
