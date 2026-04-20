@@ -36,7 +36,7 @@ layers:
   - {t: R, h: RIGHT CONTROL}
   - {t: N, h: RIGHT ALT}
   - {t: S, h: RIGHT GUI}
-  - {t: '"', h: UML}
+  - {t: '''', h: UML}
   - {t: /, s: \}
   - LEFT SHIFT
   - Z
