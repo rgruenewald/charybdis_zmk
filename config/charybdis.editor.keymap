@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include "keys_de_german.h"
 
 /*
  * Editor mirror keymap
@@ -20,6 +21,7 @@
 #define MOUSE   5
 #define SCROLL  6
 #define FUN     7
+#define UML     8
 
 / {
     /* Trackball pointer on normal layers */
@@ -166,7 +168,7 @@
 &kp N1           &kp N2            &kp N3                 &kp N4                 &kp N5                 &kp N6                  &kp N7                &kp N8                 &kp N9                 &kp N0                 &kp MINUS                    &kp PLUS
 &kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp Y                   &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
 &mkp MCLK        &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &kp LBKT
-&sls             &kp LEFT_SHIFT    &kp Z                  &kp MINUS              &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp APOSTROPHE
+&sls             &kp LEFT_SHIFT    &kp Z                  &kp MINUS              &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &lt UML APOSTROPHE
 /* Left thumbs (hardware-corrected): TAB/ESC as tap; Space, Enter, Backspace, Delete use quick-tap repeat before layer hold. */
 &lt MOUSE TAB      &spc_nav NAV SPACE     &lt MEDIA ESCAPE        &ent_num NUM ENTER      &bspc_sym SYM BACKSPACE
                                                                 &mkp LCLK             &rclk_scroll SCROLL RCLK  &del_fun FUN DELETE
@@ -261,7 +263,19 @@
 &none        &kp F10        &kp F1         &kp F2         &kp F3            &kp PAUSE_BREAK  &none            &none             &none           &none          &none        &none
 /* Left FUN thumbs: TAB, SPACE, APP */
                                &kp TAB     &kp SPACE     &kp K_APP         &trans            &trans
-                                           &trans        &trans            &trans
+                                            &trans        &trans            &trans
+            >;
+        };
+
+        uml_layer {
+            label = "UML";
+            bindings = <
+&trans   &trans            &trans           &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
+&trans   &trans            &trans           &kp O             &kp U             &trans             &trans          &trans            &trans           &trans            &trans           &trans
+&trans   &trans            &kp APOSTROPHE    &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
+&trans   &trans            &trans           &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
+                               &trans      &trans      &trans            &trans             &trans
+                                           &trans      &trans            &trans
             >;
         };
 
