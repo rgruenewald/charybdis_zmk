@@ -48,7 +48,7 @@ layers:
   - M
   - W
   - RIGHT SHIFT
-  - ''''
+  - '#'
   - {t: TAB, h: MOUSE}
   - {t: SPACE, h: NAV}
   - {t: ESCAPE, h: MEDIA}
