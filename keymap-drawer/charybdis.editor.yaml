@@ -36,7 +36,7 @@ layers:
   - {t: R, h: RIGHT CONTROL}
   - {t: N, h: RIGHT ALT}
   - {t: S, h: RIGHT GUI}
-  - {t: '[', h: UML}
+  - {t: '"', h: UML}
   - {t: /, s: \}
   - LEFT SHIFT
   - Z
@@ -48,7 +48,7 @@ layers:
   - M
   - W
   - RIGHT SHIFT
-  - \
+  - {t: \, s: /}
   - {t: TAB, h: MOUSE}
   - {t: SPACE, h: NAV}
   - {t: ESCAPE, h: MEDIA}
