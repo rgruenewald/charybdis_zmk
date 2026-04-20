@@ -157,6 +157,8 @@
         neq: neq { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp PLUS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         nbs: nbs { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp BSLH>, <&kp PIPE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         sls: sls { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SLASH>, <&kp BSLH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        bslh_sls: bslh_sls { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp BSLH>, <&kp SLASH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        qot_apos: qot_apos { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DQT>, <&kp APOSTROPHE>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     keymap {
@@ -167,8 +169,8 @@
             bindings = <
 &kp N1           &kp N2            &kp N3                 &kp N4                 &kp N5                 &kp N6                  &kp N7                &kp N8                 &kp N9                 &kp N0                 &kp MINUS                    &kp PLUS
 &kp ESCAPE       &kp Q             &kp K                  &kp O                  &kp U                  &kp Y                   &kp V                 &kp D                  &kp C                  &kp L                  &kp F                        &kp J
-&mkp MCLK        &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &lt UML LBKT
-&sls             &kp LEFT_SHIFT    &kp Z                  &kp MINUS              &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &kp BSLH
+&mkp MCLK        &hm_l LEFT_GUI H  &hm_l LEFT_ALT A       &hm_l LEFT_CONTROL E   &hm_l LEFT_SHIFT I     &kp COMMA               &kp G                 &hm_r RIGHT_SHIFT T    &hm_r RIGHT_CONTROL R  &hm_r RIGHT_ALT N      &hm_r RIGHT_GUI S            &lt UML qot_apos
+&sls             &kp LEFT_SHIFT    &kp Z                  &kp MINUS              &kp DOT                &kp X                   &kp B                 &kp P                  &kp M                  &kp W                  &kp RIGHT_SHIFT              &bslh_sls
 /* Left thumbs (hardware-corrected): TAB/ESC as tap; Space, Enter, Backspace, Delete use quick-tap repeat before layer hold. */
 &lt MOUSE TAB      &spc_nav NAV SPACE     &lt MEDIA ESCAPE        &ent_num NUM ENTER      &bspc_sym SYM BACKSPACE
                                                                 &mkp LCLK             &rclk_scroll SCROLL RCLK  &del_fun FUN DELETE
