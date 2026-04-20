@@ -271,8 +271,8 @@
             label = "UML";
             bindings = <
 &trans   &trans            &trans           &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
-&trans   &trans            &trans           &kp O             &kp U             &trans             &trans          &trans            &trans           &trans            &trans           &trans
-&trans   &trans            &kp APOSTROPHE    &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
+&trans   &trans            &trans           &kp DE_O_UMLAUT   &kp DE_U_UMLAUT   &trans             &trans          &trans            &trans           &trans            &trans           &trans
+&trans   &trans            &kp DE_A_UMLAUT  &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
 &trans   &trans            &trans           &trans           &trans           &trans             &trans          &trans            &trans           &trans            &trans           &trans
                                &trans      &trans      &trans            &trans             &trans
                                            &trans      &trans            &trans
