@@ -11,7 +11,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
+  - ''''
   - +
   - ESCAPE
   - Q
@@ -25,7 +25,7 @@ layers:
   - L
   - F
   - J
-  - M CLK
+  - UML
   - {t: H, h: LEFT GUI}
   - {t: A, h: LEFT ALT}
   - {t: E, h: LEFT CONTROL}
@@ -38,7 +38,7 @@ layers:
   - {t: S, h: RIGHT GUI}
   - UML
   - {t: /, s: \}
-  - LEFT SHIFT
+  - M CLK
   - Z
   - '"'
   - .
@@ -481,7 +481,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
   - {t: ▽, type: trans}
@@ -491,8 +491,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '-'
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
