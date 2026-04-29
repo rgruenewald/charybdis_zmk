@@ -419,7 +419,7 @@
 &trans  &trans  &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans     &trans
 &trans  &trans  &trans           &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &trans    &trans  &trans  &trans  &trans  &trans     &trans
 &trans  &trans  &kp DE_A_UMLAUT  &trans           &trans           &trans    &trans  &trans  &trans  &trans  &kp MINUS  &trans
-&trans  &trans  &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans           &kp GRAVE        &trans           &trans    &trans  &trans  &trans  &trans  &trans     &trans
                                  &kp TILDE        &trans           &trans    &trans  &trans
                                                   &trans           &trans    &trans
             >;
