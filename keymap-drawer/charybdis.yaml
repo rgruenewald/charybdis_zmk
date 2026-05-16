@@ -77,8 +77,8 @@ layers:
   - {t: LEFT SHIFT, h: sticky}
   - ''
   - Ctl+ Z
-  - Ctl+ V
-  - Ctl+ C
+  - Sft+ INSERT
+  - Ctl+ INSERT
   - Ctl+ X
   - Ctl+ Y
   - ''
@@ -313,8 +313,8 @@ layers:
   - ''
   - ''
   - Ctl+ Z
-  - Ctl+ V
-  - Ctl+ C
+  - Sft+ INSERT
+  - Ctl+ INSERT
   - Ctl+ X
   - ''
   - Ctl+ Y
@@ -370,8 +370,8 @@ layers:
   - LEFT SHIFT
   - ''
   - Ctl+ Z
-  - Ctl+ V
-  - Ctl+ C
+  - Sft+ INSERT
+  - Ctl+ INSERT
   - Ctl+ X
   - ''
   - Ctl+ Y
